@@ -34,7 +34,9 @@ export default {
     margin: initial;
     font-family: RobotoSlab, SourceCodePro;
     font-size: 16px;
+    line-height: 1;
     font-weight: normal;
+    color: #222222;
   }
   #app {
     display: flex;

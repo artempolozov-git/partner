@@ -10,7 +10,11 @@
   "dependencies": {
     "@kevindesousa/vue-k-tabs": "^1.0.0",
     "core-js": "^3.6.5",
+    "hooper": "^0.3.4",
+    "lottie-web-vue": "^1.2.0",
+    "swiper": "^5.4.5",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.5.2",
     "vue-tabs": "^0.3.1"
   },

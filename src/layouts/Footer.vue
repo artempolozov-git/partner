@@ -1,17 +1,21 @@
 <template>
-  <div class="footer-container"></div>
+  <div class="footer__container">
+    <footer-form></footer-form>
+  </div>
 </template>
 
 <script>
+    import FooterForm from "@/components/FooterForm";
     export default {
-        name: "Footer"
+        name: "Footer",
+        components: {FooterForm}
     }
 </script>
 
 <style scoped>
-.footer-container {
-  padding: 50px 100px;
+.footer__container {
+  padding: 100px 250px;
   box-sizing: border-box;
-  border-top: 1px #C3C6C8 solid;
+  background-color: #1A1B22;
 }
 </style>

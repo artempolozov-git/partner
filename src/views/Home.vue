@@ -1,38 +1,25 @@
 <template>
-  <div class="home-container">
-    <div class="home-title">
-      <div class="title">Внедрение и сопровождение 1С</div>
-      <div class="description">Автоматизация бизнес-процессов</div>
-    </div>
-  </div>
+  <section class="home__container">
+    <main-screen></main-screen>
+    <advantages></advantages>
+    <services></services>
+    <reviews></reviews>
+  </section>
 </template>
 
 <script>
+    import MainScreen from "@/home/MainScreen";
+    import Advantages from "@/home/Advantages";
+    import Services from "@/home/Services";
+    import Reviews from "@/home/Reviews";
     export default {
-        name: "Home"
+        name: "Home",
+        components: {Reviews, Services, Advantages, MainScreen}
     }
 </script>
 
 <style scoped>
-.home-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  padding: 100px 100px;
-}
-.home-title {
-  text-align: center;
-}
-.title {
-  font-size: 50px;
-  color: #4D868E;
-  margin-bottom: 20px;
-}
-.description {
-  font-family: SourceCodePro;
-  color: #222222;
-  font-size: 30px;
-  font-weight: 500;
+.home__container {
+
 }
 </style>
