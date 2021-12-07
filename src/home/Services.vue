@@ -18,8 +18,7 @@
         <!--2 right image block-->
         <div class="service">
           <div class="service-information">
-            <h2 class="service-title">Автоматизация бюджетных
-              <br>и некоммерческих учреждений</h2>
+            <h2 class="service-title">Автоматизация учреждений госсектора</h2>
             <p class="service-description">Предложим вам оптимальные решения для автоматизации бухгалтерского,
               финансового и налогового учета, расчета заработной платы, ведения
               сводной отчетности на базе специализированных конфигураций 1С
@@ -126,7 +125,7 @@
 .service-image {
   width: 27%;
   margin-right: 70px;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
 }
 .service-information {
   width: 50%;
@@ -147,16 +146,21 @@
   width: max-content;
   font-family: SourceCodePro;
   color: #0086C9;
-  border-bottom: 1px #0086C9 solid;
-  transition: all 0.2s ease-out;
+  text-decoration: underline;
+  transition: all 0.2s ease;
 }
 .view-more:hover {
   cursor: pointer;
   color: #0093da;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
 }
 .service:hover .service-image {
   transform: scale(1.05);
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease;
+}
+@media only screen and (max-width : 1700px) {
+  .home__services__container {
+    padding: 0 100px;
+  }
 }
 </style>

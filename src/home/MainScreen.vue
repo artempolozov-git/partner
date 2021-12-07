@@ -73,4 +73,9 @@
   background-color: #5222D0;
   transition: all 0.2s ease-out;
 }
+@media only screen and (max-width : 1700px) {
+  .home__main-screen__container {
+    padding: 0 100px;
+  }
+}
 </style>

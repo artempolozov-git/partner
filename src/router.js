@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
+import Reviews from "@/home/Reviews";
 
 Vue.use(Router);
 
@@ -14,6 +15,7 @@ const router = new Router({
             components: {
                 header: Header,
                 footer: Footer,
+                reviews: Reviews,
                 //aside: Aside,
                 default: () => import('@/views/Home.vue')
             },

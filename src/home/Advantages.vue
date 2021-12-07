@@ -1,6 +1,6 @@
 <template>
   <section class="home__advantages__container">
-    <h1 class="title-section">Почему мы</h1>
+    <h1 class="title-section">Почему мы?</h1>
     <div class="advantages__grid">
       <!--1 block-->
       <div class="advantages__block">
@@ -99,5 +99,14 @@
   font-family: SourceCodePro;
   color: #848484;
   margin-top: 10px;
+}
+@media only screen and (max-width : 1700px) {
+  .home__advantages__container {
+    padding: 100px 200px;
+  }
+  .advantages__grid {
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+  }
 }
 </style>

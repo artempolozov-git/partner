@@ -3,7 +3,6 @@
     <main-screen></main-screen>
     <advantages></advantages>
     <services></services>
-    <reviews></reviews>
   </section>
 </template>
 
@@ -11,10 +10,9 @@
     import MainScreen from "@/home/MainScreen";
     import Advantages from "@/home/Advantages";
     import Services from "@/home/Services";
-    import Reviews from "@/home/Reviews";
     export default {
         name: "Home",
-        components: {Reviews, Services, Advantages, MainScreen}
+        components: {Services, Advantages, MainScreen}
     }
 </script>
 

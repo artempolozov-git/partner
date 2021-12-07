@@ -38,19 +38,21 @@
 
 <style scoped>
 .footer__form__container {
-
+  padding: 100px 250px;
+  box-sizing: border-box;
 }
 .form__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  padding: 70px 100px;
+  padding: 70px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
 .form__title__container {
-  width: 50%;
+  width: 40%;
+  margin-right: 50px;
 }
 .title {
   font-size: 1.5vw;
@@ -60,7 +62,6 @@
   font-family: SourceCodePro;
   color: #848484;
   margin-top: 10px;
-  width: 70%;
 }
 .send-button {
   margin-top: 50px;
@@ -83,7 +84,10 @@
   transition: all 0.2s ease-out;
 }
 .input__container {
-  width: 40%;
+  width: 50%;
+}
+.data-input {
+  width: 100%;
 }
 .data-input > input, .data-input > textarea {
   width: 100%;
@@ -114,5 +118,13 @@
   display: flex;
   align-items: center;
   margin-top: 30px;
+}
+@media only screen and (max-width : 1700px) {
+  .footer__form__container {
+    padding: 100px 200px;
+  }
+  .form__wrapper {
+    padding: 50px;
+  }
 }
 </style>

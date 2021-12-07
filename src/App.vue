@@ -7,6 +7,7 @@
       </transition>
     </div>
     <login-form></login-form>
+    <router-view name="reviews"></router-view>
     <router-view name="footer"></router-view>
   </div>
 </template>

@@ -2,22 +2,60 @@
   <div class="header-navigations__block">
     <nav class="navigations__wrapper">
       <div class="navigation-links">О компании</div>
-      <div class="navigation-links">
-        <span>Услуги</span>
-        <img src="@/assets/icons/dropdown-arrow.svg">
+
+      <div class="dropdown__menu">
+        <div class="navigation-links">
+          <span class="list-title">Услуги</span>
+          <img src="@/assets/icons/dropdown-arrow.svg">
+        </div>
+        <div class="dropdown-content">
+          <p>Автоматизация бизнеса</p>
+          <p>Автоматизация учреждений<br> госсектора</p>
+          <p>Консалтинговые услуги</p>
+          <p>Бухгалтерское обслуживание</p>
+          <p>IT аутсорсинг</p>
+        </div>
       </div>
-      <div class="navigation-links">
-        <span>Купить 1С</span>
-        <img src="@/assets/icons/dropdown-arrow.svg">
+
+      <div class="dropdown__menu">
+        <div class="navigation-links">
+          <span class="list-title">Купить 1С</span>
+          <img src="@/assets/icons/dropdown-arrow.svg">
+        </div>
+        <div class="dropdown-content">
+          <p>Программные продукты 1С</p>
+          <p>Сервисы 1С</p>
+          <p>1С Комплект поддержки</p>
+        </div>
       </div>
-      <div class="navigation-links">
-        <span>Торговое оборудование</span>
-        <img src="@/assets/icons/dropdown-arrow.svg">
+
+
+      <div class="dropdown__menu">
+        <div class="navigation-links">
+          <span class="list-title">Торговое оборудование</span>
+          <img src="@/assets/icons/dropdown-arrow.svg">
+        </div>
+        <div class="dropdown-content">
+          <p>Фиксальные накопители</p>
+          <p>Контрольно кассовая техника</p>
+          <p>Сканеры</p>
+          <p>Весы</p>
+          <p>Терминалы сбора данных</p>
+          <p>Принтеры этикеток</p>
+        </div>
       </div>
-      <div class="navigation-links">
-        <span>Нам доверяют</span>
-        <img src="@/assets/icons/dropdown-arrow.svg">
+
+      <div class="dropdown__menu">
+        <div class="navigation-links">
+          <span class="list-title">Нам доверяют</span>
+          <img src="@/assets/icons/dropdown-arrow.svg">
+        </div>
+        <div class="dropdown-content">
+          <p>Внедрения</p>
+          <p>Отзывы клиентов</p>
+        </div>
       </div>
+
       <div class="navigation-links" style="margin-right: 0">Контакты</div>
     </nav>
     <div class="account-links" @click="loginForm">
@@ -89,6 +127,40 @@
     width: 35px;
     margin-right: 10px;
   }
+
+  .dropdown__menu {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content > p {
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content p:hover {
+    background-color: rgba(32, 195, 208, 0.10);
+  }
+  .dropdown__menu:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown__menu:hover {
+    cursor: pointer;
+  }
+
   @media only screen and (max-width : 1700px) {
     .header-navigations__block {
       padding: 30px 100px;

@@ -1,28 +1,28 @@
 <template>
   <div id="login" style="display: none;">
     <div class="overlay">
-      <form class="form-wrapper">
+      <form class="form__wrapper">
         <div style="display: block; width: 100%;">
           <div class="title-form">Вход в личный кабинет</div>
           <div class="button-close">
             <span class="closebtn" @click="loginForm">&times;</span>
           </div>
 
-          <div class="input-wrapper">
-            <div class="input-container">
+          <div class="input__wrapper">
+            <div class="input__container">
               <input type="text" required/>
               <label>Логин</label>
             </div>
           </div>
 
-          <div class="input-wrapper">
-            <div class="input-container">
+          <div class="input__wrapper">
+            <div class="input__container">
               <input type="password" required/>
               <label>Пароль</label>
             </div>
           </div>
 
-          <button class="feedback-button" type="submit" v-on:click="goToPage('/account')">Войти</button>
+          <button class="login__button" type="submit" v-on:click="goToPage('/account')">Войти</button>
         </div>
       </form>
     </div>
@@ -84,7 +84,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 100;
+    z-index: 10000;
   }
   .overlay {
     height: 100%;
@@ -98,10 +98,12 @@
     z-index: 100;
     position: fixed;
   }
-  .form-wrapper {
+  .form__wrapper {
     display: flex;
     padding: 70px 70px;
-    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff;
   }
   .title-form {
     font-size: 24px;
@@ -109,12 +111,12 @@
     text-align: center;
     margin-bottom: 70px;
   }
-  .input-container{
+  .input__container{
     position: relative;
     margin-bottom: 25px;
     font-family: SourceCodePro;
   }
-  .input-container label{
+  .input__container label{
     position:absolute;
     top:0px;
     left:0px;
@@ -123,7 +125,7 @@
     pointer-event:none;
     transition: all 0.3s ease-in-out;
   }
-  .input-container input{
+  .input__container > input{
     border:0;
     border-bottom:1px solid #222222;
     background:transparent;
@@ -133,17 +135,17 @@
     color: #222222;
     font-family: SourceCodePro;
   }
-  .input-container input:focus{
+  .input__container input:focus{
     border:none;
     outline:none;
     border-bottom:1px solid #4D868E;
   }
-  .input-container input:focus ~ label,
-  .input-container input:valid ~ label{
+  .input__container input:focus ~ label,
+  .input__container input:valid ~ label{
     top:-12px;
     font-size:12px;
   }
-  .input-wrapper {
+  .input__wrapper {
     margin-bottom: 70px;
   }
   .input-title > span {
@@ -151,24 +153,23 @@
     font-size: 1.1em;
     font-weight: bold;
   }
-  .feedback-button {
+  .login__button {
     display: flex;
     margin: auto;
-    padding: 15px 50px;
-    box-sizing: border-box;
-    text-align: center;
-    color: white;
+    padding: 15px 60px;
     font-size: 16px;
-    font-family: SourceCodePro;
-    font-weight: normal;
-    background-color: #4d868e;
-    border: none;
-    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px #222222 solid;
+    border-radius: 30px;
+    transition: all 0.2s ease-out;
   }
-  .feedback-button:hover {
-    transition: background-color 0.3s ease;
+  .login__button:hover {
+    color: #ffffff;
     cursor: pointer;
-    background-color: #7ea8ad;
+    border: 1px #5222D0 solid;
+    background-color: #5222D0;
+    transition: all 0.2s ease-out;
   }
 @media only screen and (max-width : 1700px) {
   .overlay {
