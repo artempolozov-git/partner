@@ -33,7 +33,7 @@ export default {
   }
   body {
     margin: initial;
-    font-family: RobotoSlab, SourceCodePro;
+    font-family: SourceSansPro, RobotoSlab;
     font-size: 16px;
     line-height: 1;
     font-weight: normal;
@@ -56,24 +56,14 @@ export default {
     font-weight: normal;
   }
   @font-face {
-    font-family: RobotoSlab;
-    src: url('./assets/RobotoSlab-Regular.ttf');
-    font-weight: 500;
-  }
-  @font-face {
-    font-family: SourceCodePro;
-    src: url('./assets/SourceCodePro-Bold.ttf');
+    font-family: SourceSansPro;
+    src: url('./assets/SourceSansPro-SemiBold.ttf');
     font-weight: bold;
   }
   @font-face {
-    font-family: SourceCodePro;
-    src: url('./assets/SourceCodePro-Medium.ttf');
+    font-family: SourceSansPro;
+    src: url('./assets/SourceSansPro-Regular.ttf');
     font-weight: normal;
-  }
-  @font-face {
-    font-family: SourceCodePro;
-    src: url('./assets/SourceCodePro-Regular.ttf');
-    font-weight: 500;
   }
   #app-content {
     flex: 1 0 auto;
@@ -82,8 +72,6 @@ export default {
     width: -webkit-fill-available;
   }
   @media only screen and (max-width : 1700px) {
-    body {
-      font-size: 14px;
-    }
+
   }
 </style>

@@ -57,7 +57,7 @@
       <div class="service">
         <div class="service-image"><img src="@/assets/images/maintenance.svg"></div>
         <div class="service-information">
-          <h2 class="service-title">Техническое обслуживание и поддержка</h2>
+          <h2 class="service-title">IT аутсорсинг</h2>
           <p class="service-description">Производим развертывание и техническое сопровождение информационных
             систем, обслуживание компьютерных сетей. Обеспечиваем непрерывный
             доступ к ИТ-инфраструктуре вашего предприятия. Размещаем информационные
@@ -113,7 +113,9 @@
   background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 10%, rgba(57, 116, 208, 0.11) 64%, rgba(0, 134, 201, 0.11) 100%);
 }
 .title-section {
-  font-size: 2vw;
+  font-size: 2em;
+  font-family: RobotoSlab;
+  font-weight: normal;
   margin: 0;
 }
 .service {
@@ -134,18 +136,16 @@
   margin: 0 0 0 70px;
 }
 .service-title {
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 .service-description {
-  font-family: SourceCodePro;
   color: #848484;
   margin-top: 10px;
 }
 .view-more {
   width: max-content;
-  font-family: SourceCodePro;
-  color: #0086C9;
+  color: #0086c9;
   text-decoration: underline;
   transition: all 0.2s ease;
 }
@@ -160,7 +160,7 @@
 }
 @media only screen and (max-width : 1700px) {
   .home__services__container {
-    padding: 0 100px;
+    padding: 0 50px;
   }
 }
 </style>

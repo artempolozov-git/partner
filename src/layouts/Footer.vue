@@ -30,7 +30,6 @@
 
 <style scoped>
 .footer {
-  font-family: SourceCodePro;
   background-color: #1A1B22;
 }
 .footer__container {
@@ -44,7 +43,7 @@
   box-sizing: border-box;
 }
 .logotype {
-  width: 250px;
+  width: 13vw;
 }
 .feedback__wrapper {
   display: flex;
@@ -87,9 +86,6 @@
 @media only screen and (max-width : 1700px) {
   .footer__container {
     padding: 100px;
-  }
-  .logotype {
-    width: 200px;
   }
 }
 </style>

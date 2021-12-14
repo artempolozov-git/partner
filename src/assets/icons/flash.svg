@@ -1,1 +1,20 @@
-<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.07 35.2"><defs><style>.cls-1{fill:#5222d0;}</style></defs><path class="cls-1" d="M554.17,536.15a1.76,1.76,0,0,0-1.56-1h-8.78V524.65a1.76,1.76,0,0,0-3.18-1.12l-14,19.31a1.87,1.87,0,0,0,1.42,2.88h8.78v10.53a1.73,1.73,0,0,0,1.21,1.67,2.44,2.44,0,0,0,.54.09,1.77,1.77,0,0,0,1.42-.72L554,538a1.75,1.75,0,0,0,.14-1.83Zm-13.85,14.7V544a1.76,1.76,0,0,0-1.76-1.75h-7l8.78-12.15v6.88a1.75,1.75,0,0,0,1.75,1.76h7Zm0,0" transform="translate(-526.29 -522.81)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.1;fill:#FF8719;}
+	.st1{fill:#FF8719;}
+</style>
+<g>
+	<circle class="st0" cx="30" cy="30" r="30"/>
+	<g>
+		<g>
+			<path class="st1" d="M43.8,25.7c-0.3-0.6-0.9-1-1.6-1h-8.8V14.2c0-0.8-0.5-1.5-1.2-1.8c-0.7-0.2-1.5,0-2,0.6l-14,19.3
+				c-0.4,0.5-0.4,1.2-0.1,1.8c0.3,0.7,0.9,1.1,1.6,1.1h8.8v10.5c0,0.8,0.5,1.4,1.2,1.7c0.2,0.1,0.4,0.1,0.5,0.1
+				c0.6,0,1.1-0.3,1.4-0.7l14-19.3C44.1,27,44.1,26.3,43.8,25.7L43.8,25.7z M30,40.4v-6.9c0-1-0.8-1.8-1.8-1.8h-7L30,19.6v6.9
+				c0,1,0.8,1.8,1.8,1.8h7L30,40.4z M30,40.4"/>
+		</g>
+	</g>
+</g>
+</svg>

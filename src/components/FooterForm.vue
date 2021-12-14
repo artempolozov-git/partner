@@ -55,11 +55,10 @@
   margin-right: 50px;
 }
 .title {
-  font-size: 1.5vw;
-  font-weight: normal;
+  font-size: 2vw;
+  font-weight: bold;
 }
 .subtitle {
-  font-family: SourceCodePro;
   color: #848484;
   margin-top: 10px;
 }
@@ -95,9 +94,8 @@
   padding: 20px;
   box-sizing: border-box;
   font-size: 16px;
-  font-weight: 500;
+  font-family: SourceSansPro;
   color: #222222;
-  font-family: SourceCodePro;
   border-radius: 15px;
   background-color: #F6F6F6;
   border: 2px #F6F6F6 solid;
@@ -121,7 +119,7 @@
 }
 @media only screen and (max-width : 1700px) {
   .footer__form__container {
-    padding: 100px 200px;
+    padding: 100px 150px;
   }
   .form__wrapper {
     padding: 50px;

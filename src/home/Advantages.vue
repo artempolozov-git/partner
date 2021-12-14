@@ -1,6 +1,6 @@
 <template>
   <section class="home__advantages__container">
-    <h1 class="title-section">Почему мы?</h1>
+    <h1 class="title__section">Почему мы?</h1>
     <div class="advantages__grid">
       <!--1 block-->
       <div class="advantages__block">
@@ -71,8 +71,10 @@
   padding: 100px 250px;
   box-sizing: border-box;
 }
-.title-section {
-  font-size: 2vw;
+.title__section {
+  font-size: 2em;
+  font-family: RobotoSlab;
+  font-weight: normal;
   margin: 0;
 }
 .advantages__grid {
@@ -88,24 +90,24 @@
   align-items: start;
 }
 .advantages__block > img {
-  width: 35px;
+  width: 4vw;
   margin-right: 20px;
 }
 .advantages__title {
-  font-weight: normal;
+  font-size: 21px;
+  font-weight: bold;
   margin: 0;
 }
 .advantages__description {
-  font-family: SourceCodePro;
   color: #848484;
   margin-top: 10px;
 }
 @media only screen and (max-width : 1700px) {
   .home__advantages__container {
-    padding: 100px 200px;
+    padding: 100px 150px;
   }
   .advantages__grid {
-    grid-column-gap: 70px;
+    grid-column-gap: 50px;
     grid-row-gap: 50px;
   }
 }

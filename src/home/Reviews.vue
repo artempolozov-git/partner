@@ -156,36 +156,35 @@
   background-color: #f7f7f7;
 }
 .title-section {
-  font-size: 2vw;
+  font-size: 2em;
+  font-family: RobotoSlab;
+  font-weight: normal;
   margin: 0;
 }
 .review__wrapper {
   margin-top: 70px;
 }
 .review-slider {
-  height: 500px;
+  height: auto;
   padding: 50px;
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 30px;
 }
 .review-images > img {
-  height: 7vh;
+  height: 5vh;
 }
 .review-title {
   font-weight: normal;
 }
 .review-subtitle {
-  font-family: RobotoSlab;
   color: #848484;
 }
 .review-text {
-  font-family: SourceCodePro;
   color: #848484;
 }
 .view-more {
   width: max-content;
-  font-family: SourceCodePro;
   color: #0086C9;
   border-bottom: 1px #0086C9 solid;
   transition: all 0.2s ease-out;
@@ -197,10 +196,7 @@
 }
 @media only screen and (max-width : 1700px) {
   .home__reviews__container {
-    padding: 100px 200px;
-  }
-  .review-slider {
-    height: 470px;
+    padding: 100px 150px;
   }
 }
 </style>

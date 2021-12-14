@@ -13,7 +13,7 @@
           <p>Автоматизация учреждений<br> госсектора</p>
           <p>Консалтинговые услуги</p>
           <p>Бухгалтерское обслуживание</p>
-          <p>IT аутсорсинг</p>
+          <p>IT - аутсорсинг</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@
   .navigation-links {
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 50px;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 30px;
@@ -164,9 +164,6 @@
   @media only screen and (max-width : 1700px) {
     .header-navigations__block {
       padding: 30px 100px;
-    }
-    .navigation-links {
-      margin-right: 30px;
     }
   }
 </style>

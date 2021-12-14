@@ -38,7 +38,6 @@
 
 <style scoped>
 .header__container {
-  font-family: SourceCodePro;
   color: #222222;
   background-color: #ffffff;
 }
@@ -50,7 +49,7 @@
   border-bottom: 1px #C3C6C8 solid;
 }
 .logotype {
-  width: 250px;
+  width: 13vw;
   cursor: pointer;
 }
 .feedback__wrapper {
@@ -92,9 +91,6 @@
 @media only screen and (max-width : 1700px) {
   .header-contacts__block {
     padding: 30px 100px;
-  }
-  .logotype {
-    width: 200px;
   }
 }
 </style>

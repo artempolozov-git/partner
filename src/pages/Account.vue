@@ -30,13 +30,11 @@
   padding: 30px 100px;
 }
 .breadcrumbs {
-  font-family: SourceCodePro;
   color: #c3c6c8;
   margin-bottom: 30px;
   cursor: pointer;
 }
 .select-tabs {
-  font-family: SourceCodePro;
   color: #222222;
 }
 </style>

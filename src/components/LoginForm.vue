@@ -114,7 +114,7 @@
   .input__container{
     position: relative;
     margin-bottom: 25px;
-    font-family: SourceCodePro;
+    font-family: SourceSansPro;
   }
   .input__container label{
     position:absolute;
@@ -133,7 +133,7 @@
     padding:8px 0 5px 0;
     font-size:16px;
     color: #222222;
-    font-family: SourceCodePro;
+    font-family: SourceSansPro;
   }
   .input__container input:focus{
     border:none;
