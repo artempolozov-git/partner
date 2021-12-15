@@ -26,6 +26,22 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/about-company',
+            name: 'about-company',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/AboutCompany.vue')
+            },
+            meta: {
+                title: 'О компании | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/account',
             name: 'account',
             components: {

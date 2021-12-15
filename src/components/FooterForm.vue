@@ -40,6 +40,8 @@
 .footer__form__container {
   padding: 100px 250px;
   box-sizing: border-box;
+  max-width: 1920px;
+  margin: auto;
 }
 .form__wrapper {
   display: flex;

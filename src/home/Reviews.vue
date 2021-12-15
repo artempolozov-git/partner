@@ -151,7 +151,6 @@
 <style scoped>
 .home__reviews__container {
   padding: 100px 250px;
-  margin-top: 100px;
   box-sizing: border-box;
   background-color: #f7f7f7;
 }
@@ -162,7 +161,7 @@
   margin: 0;
 }
 .review__wrapper {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .review-slider {
   height: auto;
@@ -175,13 +174,14 @@
   height: 5vh;
 }
 .review-title {
-  font-weight: normal;
+  font-weight: bold;
 }
 .review-subtitle {
-  color: #848484;
+  color: #606060;
+  font-weight: bold;
 }
 .review-text {
-  color: #848484;
+  color: #606060;
 }
 .view-more {
   width: max-content;

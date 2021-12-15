@@ -2,7 +2,7 @@
   <div class="footer-navigation">
     <div class="navigation__container">
       <nav class="navigation__wrapper">
-        <div class="nav-title">О компании</div>
+        <div class="nav-title" v-on:click="goToPage('about-company')">О компании</div>
       </nav>
       <nav class="navigation__wrapper">
         <div class="nav-title">Услуги</div>
@@ -49,7 +49,13 @@
 
 <script>
     export default {
-        name: "FooterNavigation"
+        name: "FooterNavigation",
+        methods: {
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
+        },
     }
 </script>
 

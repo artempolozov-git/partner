@@ -104,7 +104,7 @@
 
 <style scoped>
 .home__services__container {
-  padding: 0 150px;
+
 }
 .services__wrapper {
   padding: 100px;
@@ -140,7 +140,7 @@
   margin: 0;
 }
 .service-description {
-  color: #848484;
+  color: #606060;
   margin-top: 10px;
 }
 .view-more {
@@ -159,8 +159,6 @@
   transition: all 0.2s ease;
 }
 @media only screen and (max-width : 1700px) {
-  .home__services__container {
-    padding: 0 50px;
-  }
+
 }
 </style>

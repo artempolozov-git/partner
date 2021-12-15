@@ -68,7 +68,7 @@
 
 <style scoped>
 .home__advantages__container {
-  padding: 100px 250px;
+  padding: 100px;
   box-sizing: border-box;
 }
 .title__section {
@@ -83,14 +83,14 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 100px;
   grid-row-gap: 70px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .advantages__block {
   display: flex;
   align-items: start;
 }
 .advantages__block > img {
-  width: 4vw;
+  width: 3vw;
   margin-right: 20px;
 }
 .advantages__title {
@@ -99,13 +99,10 @@
   margin: 0;
 }
 .advantages__description {
-  color: #848484;
+  color: #606060;
   margin-top: 10px;
 }
 @media only screen and (max-width : 1700px) {
-  .home__advantages__container {
-    padding: 100px 150px;
-  }
   .advantages__grid {
     grid-column-gap: 50px;
     grid-row-gap: 50px;

@@ -70,13 +70,14 @@
 
 <style scoped>
 .home__main-screen__container {
-  padding: 0 150px;
+  margin-top: 30px;
+  box-sizing: border-box;
 }
 .main__block {
   padding: 50px 100px;
   box-sizing: border-box;
   border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 10%, rgba(57, 116, 208, 0.11) 64%, rgba(82, 34, 208, 0.11) 100%);
+  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
 }
 .swiper-slide {
   display: flex;
@@ -92,11 +93,10 @@
 .advantages-description {
   display: flex;
   color: #5222d0;
-  font-size: 16px;
   font-weight: bold;
 }
 .advantage {
-  margin-left: auto;
+  margin-left: 40px;
 }
 .image__block {
   width: 70%;
@@ -119,8 +119,8 @@
   transition: all 0.2s ease-out;
 }
 @media only screen and (max-width : 1700px) {
-  .home__main-screen__container {
-    padding: 0 50px;
+  .advantage {
+    margin-left: auto;
   }
 }
 </style>

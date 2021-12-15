@@ -1,7 +1,7 @@
 <template>
   <div class="header-navigations__block">
     <nav class="navigations__wrapper">
-      <div class="navigation-links">О компании</div>
+      <div class="navigation-links" v-on:click="goToPage('about-company')">О компании</div>
 
       <div class="dropdown__menu">
         <div class="navigation-links">
@@ -73,6 +73,10 @@
                 let form = document.getElementById("login");
                 form.style.display = (form.style.display == 'none') ? 'block' : 'none'
             },
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
         }
     }
 </script>
