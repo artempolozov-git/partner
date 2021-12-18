@@ -42,6 +42,22 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/consulting',
+            name: 'consulting',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/Consulting.vue')
+            },
+            meta: {
+                title: 'Консалтинговые услуги | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/account',
             name: 'account',
             components: {

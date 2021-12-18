@@ -1,5 +1,5 @@
 <template>
-  <section class="home__services__container">
+  <div class="home__services__container">
     <div class="services__wrapper">
       <h1 class="title-section">Мы предлагаем</h1>
       <div class="services__blocks">
@@ -28,7 +28,7 @@
           <div class="service-image indent-right"><img src="@/assets/images/institutions.svg"></div>
         </div>
         <!--3 left image block-->
-        <div class="service">
+        <div class="service" v-on:click="goToPage('consulting')">
           <div class="service-image"><img src="@/assets/images/consulting.svg"></div>
           <div class="service-information">
             <h2 class="service-title">Консалтинговые услуги</h2>
@@ -93,12 +93,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
     export default {
-        name: "Services"
+        name: "Services",
+        methods: {
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
+        },
     }
 </script>
 
@@ -114,8 +120,7 @@
 }
 .title-section {
   font-size: 2em;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 .service {
@@ -123,6 +128,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  cursor: pointer;
 }
 .service-image {
   width: 27%;
@@ -150,7 +156,6 @@
   transition: all 0.2s ease;
 }
 .view-more:hover {
-  cursor: pointer;
   color: #0093da;
   transition: all 0.2s ease;
 }

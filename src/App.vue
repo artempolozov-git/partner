@@ -33,8 +33,8 @@ export default {
   }
   body {
     margin: initial;
-    font-family: SourceSansPro, RobotoSlab;
-    font-size: 16px;
+    font-family: SourceSansPro;
+    font-size: 18px;
     line-height: 1;
     font-weight: normal;
     color: #222222;
@@ -44,16 +44,6 @@ export default {
     flex-direction: column;
     min-height: 100%;
     background-color: white;
-  }
-  @font-face {
-    font-family: RobotoSlab;
-    src: url('./assets/RobotoSlab-Bold.ttf');
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: RobotoSlab;
-    src: url('./assets/RobotoSlab-Medium.ttf');
-    font-weight: normal;
   }
   @font-face {
     font-family: SourceSansPro;
@@ -72,6 +62,8 @@ export default {
     width: -webkit-fill-available;
   }
   @media only screen and (max-width : 1700px) {
-
+    body {
+      font-size: 16px;
+    }
   }
 </style>

@@ -5,7 +5,7 @@
       <!--Первый слайд-->
       <swiper-slide>
         <div class="title__wrapper">
-          <h1 class="title">Экспертные решения для управленческого учета</h1>
+          <h2 class="title">Экспертные решения для управленческого учета</h2>
           <div class="advantages-description">
             <div>Контроль и планирование</div>
             <div class="advantage">Повышение эффективности</div>
@@ -79,15 +79,9 @@
   border-radius: 30px;
   background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
 }
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .title {
-  font-size: 3vw;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-size: 3em;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 .advantages-description {
@@ -99,24 +93,31 @@
   margin-left: 40px;
 }
 .image__block {
-  width: 70%;
+  width: 50%;
   margin-left: 100px;
 }
 .feedback-button {
   width: max-content;
-  padding: 15px 40px;
+  padding: 20px 60px;
   margin-top: 50px;
+  background-color: rgba(82, 34, 208, 0.1);
+  color: #5222d0;
+  font-weight: bold;
   box-sizing: border-box;
-  border: 1px #222222 solid;
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
 .feedback-button:hover {
   color: #ffffff;
   cursor: pointer;
-  border: 1px #5222D0 solid;
+  font-weight: bold;
   background-color: #5222D0;
   transition: all 0.2s ease-out;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (max-width : 1700px) {
   .advantage {

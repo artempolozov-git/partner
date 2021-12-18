@@ -1,5 +1,5 @@
 <template>
-  <section class="home__reviews__container">
+  <div class="home__reviews__container">
     <h1 class="title-section">Отзывы  клиентов</h1>
     <div class="review__wrapper">
       <swiper class="swiper" :options="swiperOption">
@@ -118,7 +118,7 @@
         </swiper-slide>
       </swiper>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -156,8 +156,7 @@
 }
 .title-section {
   font-size: 2em;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
 }
 .review__wrapper {

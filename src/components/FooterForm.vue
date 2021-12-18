@@ -68,19 +68,19 @@
   margin-top: 50px;
 }
 .send-button > input {
-  padding: 15px 60px;
-  margin-right: 30px;
+  padding: 20px 60px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: transparent;
-  border: 1px #222222 solid;
+  color: #5222d0;
+  font-weight: bold;
+  background-color: rgba(82, 34, 208, 0.11);
   border-radius: 30px;
   transition: all 0.2s ease-out;
+  border: none;
 }
 .send-button > input:hover {
   color: #ffffff;
   cursor: pointer;
-  border: 1px #5222D0 solid;
   background-color: #5222D0;
   transition: all 0.2s ease-out;
 }

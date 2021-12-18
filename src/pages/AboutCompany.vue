@@ -1,5 +1,5 @@
 <template>
-  <section class="page-main__container">
+  <div class="page-main__container">
     <div class="title__wrapper">
       <h1 class="page-title">О компании</h1>
     </div>
@@ -83,7 +83,7 @@
     <div class="text-padding__container">
       <div class="slogan-text__down">Присоединяйтесь - вместе мы создаем будущее!</div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -107,8 +107,7 @@
 }
 .page-title {
   font-size: 2.5em;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-weight: bold;
 }
 .text__container {
   padding: 50px 100px;
@@ -141,8 +140,7 @@
 }
 .title__container {
   font-size: 2em;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0 0 50px;
 }
 .directions__wrapper  {
@@ -162,10 +160,6 @@
 }
 .indent {
   margin: 0;
-}
-.direction > img {
-  width: 30px;
-  margin-left: 20px;
 }
 .arrow__container {
   padding: 0 100px;

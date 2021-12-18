@@ -8,7 +8,7 @@
         <div class="nav-title">Услуги</div>
         <p class="navigation-links">Автоматизация бизнеса</p>
         <p class="navigation-links">Автоматизация учреждений<br> госсектора</p>
-        <p class="navigation-links">Консалтинговые услуги</p>
+        <p class="navigation-links" v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
         <p class="navigation-links">Бухгалтерское обслуживание</p>
         <p class="navigation-links">IT аутсорсинг</p>
       </nav>

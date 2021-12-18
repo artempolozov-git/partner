@@ -1,5 +1,5 @@
 <template>
-  <section class="home__advantages__container">
+  <div class="home__advantages__container">
     <h1 class="title__section">Почему мы?</h1>
     <div class="advantages__grid">
       <!--1 block-->
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -72,9 +72,8 @@
   box-sizing: border-box;
 }
 .title__section {
-  font-size: 2em;
-  font-family: RobotoSlab;
-  font-weight: normal;
+  font-size: 2.5em;
+  font-weight: bold;
   margin: 0;
 }
 .advantages__grid {
@@ -94,7 +93,7 @@
   margin-right: 20px;
 }
 .advantages__title {
-  font-size: 21px;
+  font-size: 1.5em;
   font-weight: bold;
   margin: 0;
 }

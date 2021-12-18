@@ -58,17 +58,20 @@
   margin-left: auto;
 }
 .feedback-button {
-  padding: 15px 40px;
+  width: max-content;
+  padding: 20px 60px;
   margin-right: 30px;
+  background-color: rgba(82, 34, 208, 0.1);
+  color: #5222d0;
+  font-weight: bold;
   box-sizing: border-box;
-  border: 1px #222222 solid;
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
 .feedback-button:hover {
   color: #ffffff;
   cursor: pointer;
-  border: 1px #5222D0 solid;
+  font-weight: bold;
   background-color: #5222D0;
   transition: all 0.2s ease-out;
 }
