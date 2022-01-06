@@ -107,7 +107,8 @@
   }
   .title-form {
     font-size: 24px;
-    color: #333e48;
+    color: #222222;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 70px;
   }
@@ -127,7 +128,7 @@
   }
   .input__container > input{
     border:0;
-    border-bottom:1px solid #222222;
+    border-bottom: 1px solid #222222;
     background:transparent;
     width:100%;
     padding:8px 0 5px 0;
@@ -138,7 +139,7 @@
   .input__container input:focus{
     border:none;
     outline:none;
-    border-bottom:1px solid #4D868E;
+    border-bottom:1px solid #5222d0;
   }
   .input__container input:focus ~ label,
   .input__container input:valid ~ label{
@@ -156,18 +157,20 @@
   .login__button {
     display: flex;
     margin: auto;
-    padding: 15px 60px;
-    font-size: 16px;
+    padding: 20px 80px;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: bold;
     box-sizing: border-box;
-    background-color: transparent;
-    border: 1px #222222 solid;
+    color: #5222d0;
+    background-color: rgba(82, 34, 208, 0.11);
     border-radius: 30px;
     transition: all 0.2s ease-out;
+    border: none;
   }
   .login__button:hover {
     color: #ffffff;
     cursor: pointer;
-    border: 1px #5222D0 solid;
     background-color: #5222D0;
     transition: all 0.2s ease-out;
   }

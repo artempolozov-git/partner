@@ -29,7 +29,14 @@
         </div>
         <!--3 left image block-->
         <div class="service" v-on:click="goToPage('consulting')">
-          <div class="service-image"><img src="@/assets/images/consulting.svg"></div>
+          <div class="service-image">
+            <lottie-animation class="anim"
+                              :loop="true"
+                              :autoPlay="true"
+                              ref="anim"
+                              :animationData="require('@/assets/animation/consulting.json')"
+            />
+          </div>
           <div class="service-information">
             <h2 class="service-title">Консалтинговые услуги</h2>
             <p class="service-description">У нас вы можете получить консультации экспертов по широкому
@@ -57,7 +64,7 @@
       <div class="service">
         <div class="service-image"><img src="@/assets/images/maintenance.svg"></div>
         <div class="service-information">
-          <h2 class="service-title">IT аутсорсинг</h2>
+          <h2 class="service-title">IT - аутсорсинг</h2>
           <p class="service-description">Производим развертывание и техническое сопровождение информационных
             систем, обслуживание компьютерных сетей. Обеспечиваем непрерывный
             доступ к ИТ-инфраструктуре вашего предприятия. Размещаем информационные
@@ -97,8 +104,12 @@
 </template>
 
 <script>
+    import LottieAnimation from 'lottie-web-vue'
     export default {
         name: "Services",
+        components: {
+            LottieAnimation
+        },
         methods: {
             goToPage(page) {
                 this.$router.push(page);
@@ -119,7 +130,7 @@
   background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 10%, rgba(57, 116, 208, 0.11) 64%, rgba(0, 134, 201, 0.11) 100%);
 }
 .title-section {
-  font-size: 2em;
+  font-size: 36px;
   font-weight: bold;
   margin: 0;
 }
@@ -143,6 +154,7 @@
 }
 .service-title {
   font-weight: bold;
+  font-size: 21px;
   margin: 0;
 }
 .service-description {
@@ -151,13 +163,12 @@
 }
 .view-more {
   width: max-content;
-  color: #0086c9;
-  text-decoration: underline;
-  transition: all 0.2s ease;
+  color: #0093da;
+  font-weight: bold;
+  text-decoration: none;
 }
 .view-more:hover {
-  color: #0093da;
-  transition: all 0.2s ease;
+  text-decoration: underline;
 }
 .service:hover .service-image {
   transform: scale(1.05);

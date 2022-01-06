@@ -30,7 +30,7 @@
 
 <style scoped>
 .footer {
-  background-color: #1A1B22;
+  background-color: #222222;
 }
 .footer__container {
   padding: 100px 250px;
@@ -52,36 +52,37 @@
   margin-left: auto;
 }
 .feedback-button {
-  padding: 15px 40px;
-  margin-right: 30px;
-  box-sizing: border-box;
-  border: 1px #ffffff solid;
+  width: max-content;
+  padding: 20px 60px;
+  margin-right: 40px;
+  background-color: rgba(255, 255, 255, 0.11);
   color: #ffffff;
+  font-weight: bold;
+  box-sizing: border-box;
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
 .feedback-button:hover {
-  color: #ffffff;
   cursor: pointer;
-  border: 1px #5222D0 solid;
   background-color: #5222D0;
   transition: all 0.2s ease-out;
 }
 .contacts {
   text-align: right;
+  font-size: 21px;
 }
 .phone > a, .email > a {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
   color: #ffffff;
-  transition: all 0.2s ease;
 }
 .phone {
   margin-bottom: 5px;
 }
 .phone > a:hover, .email > a:hover {
   color: #0093da;
-  transition: all 0.2s ease;
+  text-decoration: underline;
 }
 @media only screen and (max-width : 1700px) {
   .footer__container {

@@ -60,7 +60,7 @@
 .feedback-button {
   width: max-content;
   padding: 20px 60px;
-  margin-right: 30px;
+  margin-right: 40px;
   background-color: rgba(82, 34, 208, 0.1);
   color: #5222d0;
   font-weight: bold;
@@ -71,25 +71,25 @@
 .feedback-button:hover {
   color: #ffffff;
   cursor: pointer;
-  font-weight: bold;
   background-color: #5222D0;
   transition: all 0.2s ease-out;
 }
 .contacts {
   text-align: right;
+  font-size: 21px;
 }
 .phone > a, .email > a {
   cursor: pointer;
-  text-decoration: underline;
   color: #222222;
-  transition: all 0.2s ease-out;
+  text-decoration: none;
+  font-weight: bold;
 }
 .phone {
   margin-bottom: 5px;
 }
 .phone > a:hover, .email > a:hover {
   color: #0093da;
-  transition: all 0.2s ease-out;
+  text-decoration: underline;
 }
 @media only screen and (max-width : 1700px) {
   .header-contacts__block {

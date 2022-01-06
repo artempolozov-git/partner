@@ -68,32 +68,32 @@
 
 <style scoped>
 .home__advantages__container {
-  padding: 100px;
+  padding: 0 100px;
+  margin: 100px 0;
   box-sizing: border-box;
 }
 .title__section {
-  font-size: 2.5em;
+  font-size: 36px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 50px;
 }
 .advantages__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 100px;
-  grid-row-gap: 70px;
-  margin-top: 50px;
+  grid-column-gap: 90px;
+  grid-row-gap: 50px;
 }
 .advantages__block {
   display: flex;
   align-items: start;
 }
 .advantages__block > img {
-  width: 3vw;
+  width: 4vw;
   margin-right: 20px;
 }
 .advantages__title {
-  font-size: 1.5em;
+  font-size: 21px;
   font-weight: bold;
   margin: 0;
 }

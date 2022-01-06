@@ -2,7 +2,7 @@
   <div class="footer-navigation">
     <div class="navigation__container">
       <nav class="navigation__wrapper">
-        <div class="nav-title" v-on:click="goToPage('about-company')">О компании</div>
+        <div class="nav-title title-links" v-on:click="goToPage('about-company')">О компании</div>
       </nav>
       <nav class="navigation__wrapper">
         <div class="nav-title">Услуги</div>
@@ -10,10 +10,10 @@
         <p class="navigation-links">Автоматизация учреждений<br> госсектора</p>
         <p class="navigation-links" v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
         <p class="navigation-links">Бухгалтерское обслуживание</p>
-        <p class="navigation-links">IT аутсорсинг</p>
+        <p class="navigation-links">IT - аутсорсинг</p>
       </nav>
       <nav class="navigation__wrapper">
-        <div class="nav-title">Купить 1С</div>
+        <div class="nav-title title-links">Купить 1С</div>
         <p class="navigation-links">Программные продукты 1С</p>
         <p class="navigation-links">Сервисы 1С</p>
         <p class="navigation-links">1С Комплект поддержки</p>
@@ -33,7 +33,7 @@
         <p class="navigation-links">Отзывы клиентов</p>
       </nav>
       <nav class="navigation__wrapper">
-        <div class="nav-title">Контакты</div>
+        <div class="nav-title title-links" v-on:click="goToPage('contacts')">Контакты</div>
       </nav>
     </div>
     <div class="privacy__container">
@@ -71,18 +71,21 @@
   }
   .nav-title  {
     color: #ffffff;
-    cursor: pointer;
     font-weight: bold;
+  }
+  .title-links:hover {
+    color: #0093da;
+    text-decoration: underline;
+    cursor: pointer;
   }
   .navigation-links {
     width: max-content;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
-    transition: all 0.2s ease;
   }
   .navigation-links:hover {
     color: #0093da;
-    transition: all 0.2s ease;
+    text-decoration: underline;
   }
   .privacy__container {
     margin-top: 100px;
@@ -91,7 +94,7 @@
     justify-content: end;
   }
   .privacy__wrapper {
-    font-size: 12px;
+    font-size: 14px;
     color: #848484;
   }
   .indent {
@@ -99,12 +102,11 @@
   }
   .privacy-links {
     width: max-content;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    text-decoration: none;
   }
   .privacy-links:hover {
     color: #0093da;
-    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: underline;
   }
 </style>

@@ -58,6 +58,21 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/contacts',
+            name: 'contacts',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/Contacts.vue')
+            },
+            meta: {
+                title: 'Контакты | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/account',
             name: 'account',
             components: {

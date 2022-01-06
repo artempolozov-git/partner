@@ -6,7 +6,7 @@
       <div class="dropdown__menu">
         <div class="navigation-links">
           <span class="list-title">Услуги</span>
-          <img src="@/assets/icons/dropdown-arrow.svg">
+          <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
           <p>Автоматизация бизнеса</p>
@@ -20,7 +20,7 @@
       <div class="dropdown__menu">
         <div class="navigation-links">
           <span class="list-title">Купить 1С</span>
-          <img src="@/assets/icons/dropdown-arrow.svg">
+          <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
           <p>Программные продукты 1С</p>
@@ -33,7 +33,7 @@
       <div class="dropdown__menu">
         <div class="navigation-links">
           <span class="list-title">Торговое оборудование</span>
-          <img src="@/assets/icons/dropdown-arrow.svg">
+          <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
           <p>Фиксальные накопители</p>
@@ -48,7 +48,7 @@
       <div class="dropdown__menu">
         <div class="navigation-links">
           <span class="list-title">Нам доверяют</span>
-          <img src="@/assets/icons/dropdown-arrow.svg">
+          <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
           <p>Внедрения</p>
@@ -56,7 +56,7 @@
         </div>
       </div>
 
-      <div class="navigation-links" style="margin-right: 0">Контакты</div>
+      <div class="navigation-links" style="margin-right: 0" v-on:click="goToPage('contacts')">Контакты</div>
     </nav>
     <div class="account-links" @click="loginForm">
       <img src="@/assets/icons/account.svg">
@@ -85,6 +85,7 @@
   .header-navigations__block {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 30px 200px;
     box-sizing: border-box;
   }
@@ -97,38 +98,38 @@
   .navigation-links {
     display: flex;
     align-items: center;
-    margin-right: 50px;
-    padding: 10px;
+    margin-right: 40px;
+    padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 30px;
     transition: all 0.3s ease-out;
   }
   .navigation-links:hover {
     cursor: pointer;
-    background-color: rgba(32, 195, 208, 0.10);
+    background: linear-gradient(45deg, rgba(32,195,208,0.10) 0%, rgba(0,134,201,0.10) 100%);
     transition: all 0.3s ease-out;
   }
   .navigation-links > span {
     margin-right: 10px;
   }
   .navigation-links > img {
-    width: 8px;
+    width: 10px;
   }
   .account-links {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 30px;
     transition: all 0.2s ease-out;
   }
   .account-links:hover {
     cursor: pointer;
-    background-color: rgba(32, 195, 208, 0.10);
+    background: linear-gradient(45deg, rgba(32,195,208,0.10) 0%, rgba(0,134,201,0.10) 100%);
     transition: all 0.2s ease-out;
   }
   .account-links > img {
-    width: 35px;
+    width: 40px;
     margin-right: 10px;
   }
 
@@ -156,7 +157,7 @@
     display: block;
   }
   .dropdown-content p:hover {
-    background-color: rgba(32, 195, 208, 0.10);
+    background: linear-gradient(45deg, rgba(32,195,208,0.10) 0%, rgba(0,134,201,0.10) 100%);
   }
   .dropdown__menu:hover .dropdown-content {
     display: block;

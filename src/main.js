@@ -10,14 +10,10 @@ Vue.use(KTabs);
 import LottieAnimation from 'lottie-web-vue'
 Vue.use(LottieAnimation);
 
-import Tooltip from 'vue-directive-tooltip';
-import 'vue-directive-tooltip/dist/vueDirectiveTooltip.css';
-Vue.use(Tooltip);
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-// import style
 import 'swiper/css/swiper.css'
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */);
+Vue.use(VueAwesomeSwiper);
 
 import headroom from 'vue-headroom'
 Vue.use(headroom);

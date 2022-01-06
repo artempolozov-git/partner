@@ -18,7 +18,7 @@
 
 <style scoped>
 .home__container {
-  padding: 0 150px 100px;
+  padding: 0 100px 150px;
 }
 @media only screen and (max-width : 1700px) {
   .home__container {

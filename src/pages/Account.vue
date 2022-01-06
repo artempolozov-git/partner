@@ -1,14 +1,13 @@
 <template>
-  <div class="account-container">
-    <div class="breadcrumbs">
-      <span v-on:click="goToPage('/')">Главная / </span>
-      <span>Личный кабинет</span>
+  <div class="account__container">
+    <div class="title__wrapper">
+      <h1 class="page-title">Личный кабинет</h1>
     </div>
-    <k-tabs>
-      <k-tab class="select-tabs" name="Форма подачи заявки" :selected="true">Для приобретения продукта компании, Вы можете подать заявку на нашем сайте</k-tab>
-      <k-tab class="select-tabs" name="Просмотр статусов заявок">Просмотрите статус поданной вами заявки</k-tab>
-      <k-tab class="select-tabs" name="Реализация товаров и услуг">Как реализовать товары и услуги</k-tab>
-      <k-tab class="select-tabs" name="Счет на оплату">Счет на оплату товаров и услуг</k-tab>
+    <k-tabs class="tabs__container">
+      <k-tab class="select-tabs__content" name="Форма подачи заявки" :selected="true">Для приобретения продукта компании, Вы можете подать заявку на нашем сайте</k-tab>
+      <k-tab class="select-tabs__content" name="Просмотр статусов заявок">Просмотрите статус поданной вами заявки</k-tab>
+      <k-tab class="select-tabs__content" name="Реализация товаров и услуг">Как реализовать товары и услуги</k-tab>
+      <k-tab class="select-tabs__content" name="Счет на оплату">Счет на оплату товаров и услуг</k-tab>
     </k-tabs>
   </div>
 </template>
@@ -16,25 +15,36 @@
 <script>
     export default {
         name: "Account",
+        components: {
+
+        },
         methods: {
-            goToPage(page) {
-                this.$router.push(page);
-                window.scrollTo(0, 0);
-            }
+
         }
     }
 </script>
 
 <style scoped>
-.account-container {
-  padding: 30px 100px;
+.account__container {
+  padding: 0 100px 150px;
 }
-.breadcrumbs {
-  color: #c3c6c8;
-  margin-bottom: 30px;
-  cursor: pointer;
+.title__wrapper {
+  padding: 50px 100px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
 }
-.select-tabs {
+.page-title {
+  font-size: 38px;
+  font-weight: bold;
+}
+.tabs__container {
+  padding: 0 100px;
+  margin-top: 50px;
+}
+.select-tabs__content {
+  margin-top: 50px;
   color: #222222;
 }
 </style>
