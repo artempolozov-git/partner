@@ -1,23 +1,23 @@
 <template>
   <div class="accordion__container">
-    <div class="refresh-button">
+    <div class="button__container">
       <span>Обновить</span>
     </div>
-    <orders-realization-content v-for="(item, ordersContents) in OrdersContent"
+    <realizations-content v-for="(item, ordersContents) in OrdersContent"
                                 :key="ordersContents"
                                 :title="item.title"
                                 :manager="item.manager"
                                 :date="item.date"
                                 :status="item.status"
-                                :percent="item.percent"></orders-realization-content>
+                                :percent="item.percent"></realizations-content>
   </div>
 </template>
 
 <script>
-    import OrdersRealizationContent from "@/account/realizations/OrdersRealizationContent";
+    import RealizationsContent from "@/account/realizations/RealizationsContent";
     export default {
-        name: "OrdersRealization",
-        components: {OrdersRealizationContent},
+        name: "Realizations",
+        components: {RealizationsContent},
         data () {
           return {
               OrdersContent: [
@@ -43,14 +43,13 @@
                       percent: 10,
                   },
               ],
-
           }
         },
     }
 </script>
 
 <style scoped>
-.refresh-button {
+.button__container {
   width: max-content;
   padding: 20px 60px;
   margin-right: 40px;
@@ -61,7 +60,7 @@
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
-.refresh-button:hover {
+.button__container:hover {
   color: #ffffff;
   cursor: pointer;
   background-color: #5222D0;

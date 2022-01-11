@@ -8,21 +8,15 @@
             <span class="closebtn" @click="loginForm">&times;</span>
           </div>
 
-          <div class="input__wrapper">
-            <div class="input__container">
-              <input type="text" required/>
-              <label>Логин</label>
-            </div>
+          <div class="input__container">
+            <input name="Логин" type="text" placeholder="Логин" required/>
           </div>
 
-          <div class="input__wrapper">
-            <div class="input__container">
-              <input type="password" required/>
-              <label>Пароль</label>
-            </div>
+          <div class="input__container">
+            <input name="Пароль" type="password" placeholder="Пароль" required/>
           </div>
 
-          <button class="login__button" type="submit" v-on:click="goToPage('/account')">Войти</button>
+          <button class="button__container" type="submit" v-on:click="goToPage('/account')">Войти</button>
         </div>
       </form>
     </div>
@@ -64,7 +58,7 @@
   .closebtn {
     color: #222222;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 50px;
     line-height: 1em;
     cursor: pointer;
   }
@@ -88,7 +82,7 @@
   }
   .overlay {
     height: 100%;
-    width: 30em;
+    width: 35em;
     top: 50%;
     right: 0;
     bottom: 0;
@@ -100,63 +94,42 @@
   }
   .form__wrapper {
     display: flex;
-    padding: 70px 70px;
+    padding: 70px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #ffffff;
   }
   .title-form {
     font-size: 24px;
-    color: #222222;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
-  .input__container{
-    position: relative;
-    margin-bottom: 25px;
+  .input__container {
     font-family: SourceSansPro;
-  }
-  .input__container label{
-    position:absolute;
-    top:0px;
-    left:0px;
-    font-size:16px;
-    color: #c3c6c8;
-    pointer-event:none;
-    transition: all 0.3s ease-in-out;
   }
   .input__container > input{
-    border:0;
-    border-bottom: 1px solid #222222;
-    background:transparent;
-    width:100%;
-    padding:8px 0 5px 0;
-    font-size:16px;
-    color: #222222;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    font-size: 18px;
     font-family: SourceSansPro;
+    color: #222222;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    border: 2px #F6F6F6 solid;
+    resize: none;
   }
-  .input__container input:focus{
-    border:none;
-    outline:none;
-    border-bottom:1px solid #5222d0;
+  .input__container > input:focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px #e1e1e1 solid;
   }
-  .input__container input:focus ~ label,
-  .input__container input:valid ~ label{
-    top:-12px;
-    font-size:12px;
-  }
-  .input__wrapper {
-    margin-bottom: 70px;
-  }
-  .input-title > span {
-    color: #14244B;
-    font-size: 1.1em;
-    font-weight: bold;
-  }
-  .login__button {
+  .button__container {
     display: flex;
-    margin: auto;
+    margin: 20px auto 0;
     padding: 20px 80px;
     font-family: SourceSansPro;
     font-size: 18px;
@@ -168,16 +141,16 @@
     transition: all 0.2s ease-out;
     border: none;
   }
-  .login__button:hover {
+  .button__container:hover {
     color: #ffffff;
     cursor: pointer;
     background-color: #5222D0;
     transition: all 0.2s ease-out;
   }
-@media only screen and (max-width : 1700px) {
-  .overlay {
-    width: 35em;
-    top: 25%;
+  @media only screen and (max-width : 1700px) {
+    .overlay {
+      width: 35em;
+      top: 25%;
+    }
   }
-}
 </style>

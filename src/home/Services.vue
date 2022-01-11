@@ -3,7 +3,7 @@
     <div class="services__wrapper">
       <h1 class="title-section">Мы предлагаем</h1>
       <div class="services__blocks">
-        <!--1 left image block-->
+        <!--Первый блок слева -->
         <div class="service">
           <div class="service-image"><img src="@/assets/images/automation.svg"></div>
           <div class="service-information">
@@ -15,7 +15,7 @@
             <div class="view-more">Узнать больше</div>
           </div>
         </div>
-        <!--2 right image block-->
+        <!--Второй блок справа-->
         <div class="service">
           <div class="service-information">
             <h2 class="service-title">Автоматизация учреждений госсектора</h2>
@@ -27,7 +27,7 @@
           </div>
           <div class="service-image indent-right"><img src="@/assets/images/institutions.svg"></div>
         </div>
-        <!--3 left image block-->
+        <!--Третий блок слева-->
         <div class="service" v-on:click="goToPage('consulting')">
           <div class="service-image">
             <lottie-animation class="anim"
@@ -47,7 +47,7 @@
             <div class="view-more">Узнать больше</div>
           </div>
         </div>
-        <!--4 right image block-->
+        <!--Четвертый блок справа-->
         <div class="service">
           <div class="service-information">
             <h2 class="service-title">Бухгалтерское обслуживание</h2>
@@ -60,7 +60,7 @@
           <div class="service-image indent-right"><img src="@/assets/images/accountant.svg"></div>
         </div>
       </div>
-      <!--5 left image block-->
+      <!--Пятый блок слева-->
       <div class="service">
         <div class="service-image"><img src="@/assets/images/maintenance.svg"></div>
         <div class="service-information">
@@ -72,7 +72,7 @@
           <div class="view-more">Узнать больше</div>
         </div>
       </div>
-      <!--6 right image block-->
+      <!--Шестой блок справа-->
       <div class="service">
         <div class="service-information">
           <h2 class="service-title">Продажа, внедрение и поддержка программ «1С»</h2>
@@ -85,7 +85,7 @@
         </div>
         <div class="service-image indent-right"><img src="@/assets/images/programs.svg"></div>
       </div>
-      <!--7 left image block-->
+      <!--Седьмой блок слева-->
       <div class="service">
         <div class="service-image"><img src="@/assets/images/equipment.svg"></div>
         <div class="service-information">

@@ -7,16 +7,22 @@
       </transition>
     </div>
     <login-form></login-form>
+    <appeals-form></appeals-form>
+    <acts-form></acts-form>
     <router-view name="reviews"></router-view>
     <router-view name="footer"></router-view>
   </div>
 </template>
 
 <script>
-import LoginForm from "@/components/LoginForm";
+import LoginForm from "@/account/LoginForm";
+import AppealsForm from "@/account/appeals/AppealsForm";
+import ActsForm from "@/account/act/ActsForm";
 export default {
     name: 'App',
     components: {
+        ActsForm,
+        AppealsForm,
         LoginForm
     },
     computed: {

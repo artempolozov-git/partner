@@ -5,20 +5,28 @@
     </div>
     <k-tabs class="tabs__container">
       <k-tab class="select-tabs__content" name="Заказы и реализации" :selected="true">
-        <orders-realization></orders-realization>
+        <realizations></realizations>
       </k-tab>
-      <k-tab class="select-tabs__content" name="Обращения">Просмотрите статус поданной вами заявки</k-tab>
-      <k-tab class="select-tabs__content" name="Акты сверки">Как реализовать товары и услуги</k-tab>
+      <k-tab class="select-tabs__content" name="Обращения">
+        <appeals></appeals>
+      </k-tab>
+      <k-tab class="select-tabs__content" name="Акты сверки">
+        <acts></acts>
+      </k-tab>
     </k-tabs>
   </div>
 </template>
 
 <script>
-    import OrdersRealization from "@/account/realizations/OrdersRealization";
+    import Realizations from "@/account/realizations/Realizations";
+    import Appeals from "@/account/appeals/Appeals";
+    import Acts from "@/account/act/Acts";
     export default {
         name: "Account",
         components: {
-            OrdersRealization
+            Acts,
+            Appeals,
+            Realizations
         },
     }
 </script>

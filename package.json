@@ -16,6 +16,7 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-easy-tooltip": "^1.0.3",
     "vue-headroom": "^0.10.1",
+    "vue-masked-input": "^0.5.2",
     "vue-router": "^3.5.2"
   },
   "devDependencies": {

@@ -16,7 +16,7 @@
         </div>
         <div class="input__block">
           <div class="data-input indent">
-            <input name="Телефон" type="text" placeholder="Телефон" required>
+            <masked-input v-model="phone" mask="\+\7 (111) 111 11-11" name="Телефон" type="text" placeholder="Телефон" required></masked-input>
           </div>
           <div class="data-input">
             <input name="Эл.почта" type="text" placeholder="Эл.почта" required>
@@ -31,8 +31,12 @@
 </template>
 
 <script>
+    import MaskedInput from 'vue-masked-input'
     export default {
-        name: "FooterForm"
+        name: "FooterForm",
+        components: {
+            MaskedInput
+        },
     }
 </script>
 

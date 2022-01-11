@@ -6,22 +6,21 @@
     </summary>
     <div class="trigger-content__container">
       <div class="information-about-orders">
-        <span class="information-title">Менеджер: </span>
+        <span class="information-title">Описание: </span>
+        <span class="information-content">{{desc}}</span>
+      </div>
+      <div class="information-about-orders">
+        <span class="information-title">Сотрудник: </span>
         <span class="information-content">{{manager}}</span>
       </div>
       <div class="information-about-orders">
-        <span class="information-title">Срок выполнения: </span>
-        <span class="information-content">{{date}}</span>
+        <span class="information-title">Важность: </span>
+        <span class="information-content">{{importance}}</span>
       </div>
       <div class="information-about-orders">
-        <span class="information-title">Текущее состояние: </span>
+        <span class="information-title">Состояние обращения: </span>
         <span class="information-content">{{status}}</span>
       </div>
-      <div class="information-about-orders">
-        <span class="information-title">Процент оплаты: </span>
-        <span class="information-content">{{percent}}</span>
-      </div>
-      <div class="download-button">Скачать счёт</div>
 
       <div class="table-main__container">
         <div class="table">
@@ -29,18 +28,16 @@
             <table class="table">
               <thead>
               <tr>
-                <th>Номенклатура</th>
-                <th>Количество</th>
-                <th>Цена</th>
+                <th>Наименование</th>
                 <th>Сумма</th>
-                <th>Сумма скидки</th>
-                <th>Процент скидки</th>
+                <th>Комментарий</th>
               </tr>
               </thead>
               <tbody>
               <tr v-for="(item, table ) in informationTable" :key="table">
                 <td>{{item.named}}</td>
-                <td v-for="(value, table) in item.value" :key="table">{{value}}</td>
+                <td>{{item.value}}</td>
+                <td>{{item.comment}}</td>
               </tr>
               </tbody>
             </table>
@@ -52,30 +49,25 @@
 </template>
 
 <script>
-
     export default {
-        name: "OrdersRealizationContent",
-        components: {},
+        name: "AppealsContent",
         data () {
-          return {
-              informationTable: [
-                  {
-                      named: 'Информационно - технологические услуги',
-                      value: [1, 1000, 1000, 0, 0],
-                  },
-                  {
-                      named: 'Информационно - технологические услуги',
-                      value: [1, 1000, 1000, 0, 0],
-                  },
-              ],
-          }
+            return {
+                informationTable: [
+                    {
+                        named: 'Информационно - технологические услуги',
+                        value: 1,
+                        comment: 'В бухгалтерии ноут с учеткой Денис Левин. Добавил пользователя в групп printer lip buh main',
+                    },
+                ],
+            }
         },
         props: {
             title: String,
             manager: String,
-            date: String,
+            desc: String,
+            importance: String,
             status: String,
-            percent: Number,
         },
     }
 </script>
@@ -123,16 +115,6 @@
   }
   .information-content {
     color: #606060;
-  }
-  .download-button {
-    width: max-content;
-    color: #0093da;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .download-button:hover {
-    text-decoration: underline;
   }
   .table{
     width: 100%;
