@@ -4,7 +4,7 @@
     <swiper class="swiper" :options="swiperOption">
       <!--Первый слайд-->
       <swiper-slide>
-        <div class="title__wrapper">
+        <div class="title__container">
           <h2 class="title">Экспертные решения для управленческого учета!</h2>
           <div class="advantages__content">
             <div class="advantages__wrapper">
@@ -34,6 +34,37 @@
         </div>
       </swiper-slide>
       <!--Второй слайд-->
+      <swiper-slide>
+        <div class="title__container">
+          <h2 class="title">Экспертные решения для управленческого учета!</h2>
+          <div class="advantages__content">
+            <div class="advantages__wrapper">
+              <img src="@/assets/icons/check.svg">
+              <span>Контроль и планирование</span>
+            </div>
+            <div class="advantages__wrapper advantages__indent-top">
+              <img src="@/assets/icons/check.svg">
+              <span>Повышение эффективности</span>
+            </div>
+            <div class="advantages__wrapper advantages__indent-top">
+              <img src="@/assets/icons/check.svg">
+              <span>Развитие и результат</span>
+            </div>
+          </div>
+          <div class="feedback-button">
+            <span>Оставить заявку</span>
+          </div>
+        </div>
+        <div class="image__block">
+          <lottie-animation class="anim"
+                            :loop="true"
+                            :autoPlay="true"
+                            ref="anim"
+                            :animationData="require('@/assets/animation/solutions-main-page.json')"
+          />
+        </div>
+      </swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>
 </div>
@@ -54,7 +85,8 @@
             return {
                 swiperOption: {
                     pagination: {
-                        el: '.swiper-pagination'
+                        el: '.swiper-pagination',
+                        clickable: true,
                     },
                     loop: false,
                     autoplay: {

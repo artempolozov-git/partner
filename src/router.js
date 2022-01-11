@@ -79,7 +79,7 @@ const router = new Router({
                 header: Header,
                 footer: Footer,
                 //aside: Aside,
-                default: () => import('@/pages/Account.vue')
+                default: () => import('@/account/Account.vue')
             },
             meta: {
                 title: 'Личный кабинет | PARTNER',

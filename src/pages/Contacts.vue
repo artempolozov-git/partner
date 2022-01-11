@@ -63,7 +63,7 @@
 
 <style scoped>
   .page-main__container {
-    padding: 0 100px 150px;
+    padding: 0 100px 100px;
   }
   .title__wrapper {
     padding: 50px 100px;

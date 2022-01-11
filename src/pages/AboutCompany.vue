@@ -105,7 +105,7 @@
 
 <style scoped>
 .page-main__container {
-  padding: 0 100px 150px;
+  padding: 0 100px 100px;
 }
 .title__wrapper {
   padding: 50px 100px;
@@ -201,7 +201,16 @@
 .arrow-icon {
   width: 1.3vw;
   margin-right: 10px;
+  transition: all 0.2s ease;
+}
+.arrow-list__block:hover .arrow-icon{
   transform: rotate(-90deg);
+  transition: all 0.2s ease;
+}
+.arrow-list__block:hover .arrow-list__text {
+  color: #5222d0;
+  transition: all 0.2s ease;
+  cursor: default;
 }
 @media only screen and (max-width : 1700px) {
   .page-main__container {
