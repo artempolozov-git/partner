@@ -11,6 +11,8 @@
     "@kevindesousa/vue-k-tabs": "^1.0.0",
     "core-js": "^3.6.5",
     "lottie-web-vue": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
     "swiper": "^5.4.5",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",

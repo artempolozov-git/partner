@@ -1,6 +1,6 @@
 <template>
   <div class="home__reviews__container">
-    <h1 class="title__section">Отзывы  клиентов</h1>
+    <h1 class="title__section">Отзывы  клиентов:</h1>
     <div class="review__wrapper">
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide>
@@ -148,14 +148,14 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .home__reviews__container {
   padding: 100px 250px;
   box-sizing: border-box;
   background-color: #f7f7f7;
 }
 .title__section {
-  font-size: 36px;
+  font-size: $section-title-fontsize;
   font-weight: bold;
   margin: 0 0 50px;
 }
@@ -176,21 +176,14 @@
   font-weight: bold;
 }
 .review-subtitle {
-  color: #606060;
+  color: $color-text;
   font-weight: bold;
 }
 .review-text {
-  color: #606060;
+  color: $color-text;
 }
 .view-more {
-  width: max-content;
-  color: #0093da;
-  text-decoration: none;
-  font-weight: bold;
-}
-.view-more:hover {
-  cursor: pointer;
-  text-decoration: underline;
+  @extend %links;
 }
 @media only screen and (max-width : 1700px) {
   .home__reviews__container {

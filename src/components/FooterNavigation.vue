@@ -6,7 +6,7 @@
       </nav>
       <nav class="navigation__wrapper">
         <div class="nav-title">Услуги</div>
-        <p class="navigation-links">Автоматизация бизнеса</p>
+        <p class="navigation-links" v-on:click="goToPage('business-automation')">Автоматизация бизнеса</p>
         <p class="navigation-links">Автоматизация учреждений<br> госсектора</p>
         <p class="navigation-links" v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
         <p class="navigation-links">Бухгалтерское обслуживание</p>
@@ -59,7 +59,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .navigation__container {
     display: flex;
     flex-wrap: wrap;
@@ -78,14 +78,10 @@
     text-decoration: underline;
     cursor: pointer;
   }
-  .navigation-links {
-    width: max-content;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .navigation-links:hover {
-    color: #0093da;
-    text-decoration: underline;
+  .navigation-links, .privacy-links {
+    @extend %links;
+    font-weight: normal;
+    color: $color-text;
   }
   .privacy__container {
     margin-top: 100px;
@@ -99,14 +95,5 @@
   }
   .indent {
     margin-right: 20px;
-  }
-  .privacy-links {
-    width: max-content;
-    text-decoration: none;
-  }
-  .privacy-links:hover {
-    color: #0093da;
-    cursor: pointer;
-    text-decoration: underline;
   }
 </style>

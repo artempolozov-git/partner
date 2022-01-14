@@ -28,7 +28,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer {
   background-color: #222222;
 }
@@ -52,20 +52,10 @@
   margin-left: auto;
 }
 .feedback-button {
-  width: max-content;
-  padding: 20px 60px;
+  @extend %buttons;
+  color: #ffffff;
   margin-right: 40px;
   background-color: rgba(255, 255, 255, 0.11);
-  color: #ffffff;
-  font-weight: bold;
-  box-sizing: border-box;
-  border-radius: 30px;
-  transition: all 0.2s ease-out;
-}
-.feedback-button:hover {
-  cursor: pointer;
-  background-color: #5222D0;
-  transition: all 0.2s ease-out;
 }
 .contacts {
   text-align: right;

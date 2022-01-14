@@ -40,7 +40,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer__form__container {
   padding: 100px 250px;
   box-sizing: border-box;
@@ -61,8 +61,7 @@
   margin-right: 50px;
 }
 .title__section {
-  font-size: 36px;
-  font-weight: bold;
+  @extend %titleSection;
   margin: 0 0 15px;
 }
 .subtitle {
@@ -73,22 +72,7 @@
   margin-top: 50px;
 }
 .send-button > input {
-  padding: 20px 80px;
-  font-family: SourceSansPro;
-  font-size: 18px;
-  font-weight: bold;
-  box-sizing: border-box;
-  color: #5222d0;
-  background-color: rgba(82, 34, 208, 0.11);
-  border-radius: 30px;
-  transition: all 0.2s ease-out;
-  border: none;
-}
-.send-button > input:hover {
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #5222D0;
-  transition: all 0.2s ease-out;
+  @extend %buttons;
 }
 .input__container {
   width: 50%;
@@ -97,22 +81,7 @@
   width: 100%;
 }
 .data-input > input, .data-input > textarea {
-  width: 100%;
-  height: 70px;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: 18px;
-  font-family: SourceSansPro;
-  color: #222222;
-  border-radius: 15px;
-  background-color: #F6F6F6;
-  border: 2px #F6F6F6 solid;
-  resize: none;
-}
-.data-input > input:focus, .data-input > textarea:focus {
-  outline: none;
-  background-color: #ffffff;
-  border: 2px #e1e1e1 solid;
+  @extend %inputStyle;
 }
 .data-input > textarea {
   height: 150px;

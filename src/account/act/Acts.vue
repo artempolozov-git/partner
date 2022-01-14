@@ -63,22 +63,8 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .button__container {
-    width: max-content;
-    padding: 20px 60px;
-    margin-right: 40px;
-    background-color: rgba(82, 34, 208, 0.1);
-    color: #5222d0;
-    font-weight: bold;
-    box-sizing: border-box;
-    border-radius: 30px;
-    transition: all 0.2s ease-out;
-  }
-  .button__container:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #5222D0;
-    transition: all 0.2s ease-out;
+    @extend %buttons;
   }
 </style>

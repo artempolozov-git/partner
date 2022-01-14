@@ -47,7 +47,7 @@
     };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .button-close {
     transition: 0.3s;
     position: absolute;
@@ -82,7 +82,7 @@
   }
   .overlay {
     height: 100%;
-    width: 35em;
+    width: 30em;
     top: 50%;
     right: 0;
     bottom: 0;
@@ -109,43 +109,12 @@
     font-family: SourceSansPro;
   }
   .input__container > input{
-    width: 100%;
-    height: 70px;
-    padding: 20px;
+    @extend %inputStyle;
     margin-bottom: 30px;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: SourceSansPro;
-    color: #222222;
-    border-radius: 15px;
-    background-color: #F6F6F6;
-    border: 2px #F6F6F6 solid;
-    resize: none;
-  }
-  .input__container > input:focus {
-    outline: none;
-    background-color: #ffffff;
-    border: 2px #e1e1e1 solid;
   }
   .button__container {
-    display: flex;
+    @extend %buttons;
     margin: 20px auto 0;
-    padding: 20px 80px;
-    font-family: SourceSansPro;
-    font-size: 18px;
-    font-weight: bold;
-    box-sizing: border-box;
-    color: #5222d0;
-    background-color: rgba(82, 34, 208, 0.11);
-    border-radius: 30px;
-    transition: all 0.2s ease-out;
-    border: none;
-  }
-  .button__container:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #5222D0;
-    transition: all 0.2s ease-out;
   }
   @media only screen and (max-width : 1700px) {
     .overlay {

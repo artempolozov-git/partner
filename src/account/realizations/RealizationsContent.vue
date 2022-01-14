@@ -80,7 +80,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   details > summary {
     list-style: none;
   }
@@ -88,22 +88,7 @@
     display: none;
   }
   .item__trigger {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-    margin-top: 30px;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
-    text-align: left;
-    cursor: pointer;
-  }
-  .item__trigger:hover {
-    box-shadow: none;
-    border: 2px solid #5222d0;
+    @extend %itemTrigger;
   }
   .item__trigger-title {
     font-weight: bold;
@@ -122,17 +107,10 @@
     font-weight: bold;
   }
   .information-content {
-    color: #606060;
+    color: $color-text;
   }
   .download-button {
-    width: max-content;
-    color: #0093da;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .download-button:hover {
-    text-decoration: underline;
+    @extend %links;
   }
   .table{
     width: 100%;

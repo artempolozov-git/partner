@@ -1,11 +1,18 @@
 <template>
   <div class="home__services__container">
     <div class="services__wrapper">
-      <h1 class="title-section">Мы предлагаем</h1>
+      <h1 class="title__section">Мы предлагаем:</h1>
       <div class="services__blocks">
         <!--Первый блок слева -->
-        <div class="service">
-          <div class="service-image"><img src="@/assets/images/automation.svg"></div>
+        <div class="service" v-on:click="goToPage('business-automation')">
+          <div class="service-image">
+            <lottie-animation class="anim"
+                              :loop="true"
+                              :autoPlay="true"
+                              ref="anim"
+                              :animationData="require('@/assets/animation/automation.json')"
+            />
+          </div>
           <div class="service-information">
             <h2 class="service-title">Автоматизация бизнеса</h2>
             <p class="service-description">Мы занимаемся разработкой и внедрением решений для комплексной
@@ -119,18 +126,15 @@
     }
 </script>
 
-<style scoped>
-.home__services__container {
-
-}
+<style lang="scss" scoped>
 .services__wrapper {
   padding: 100px;
   box-sizing: border-box;
   border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 10%, rgba(57, 116, 208, 0.11) 64%, rgba(0, 134, 201, 0.11) 100%);
+  background: $color-banner;
 }
-.title-section {
-  font-size: 36px;
+.title__section {
+  font-size: $section-title-fontsize;
   font-weight: bold;
   margin: 0;
 }
@@ -158,17 +162,11 @@
   margin: 0;
 }
 .service-description {
-  color: #606060;
+  color: $color-text;
   margin-top: 10px;
 }
 .view-more {
-  width: max-content;
-  color: #0093da;
-  font-weight: bold;
-  text-decoration: none;
-}
-.view-more:hover {
-  text-decoration: underline;
+  @extend %links;
 }
 .service:hover .service-image {
   transform: scale(1.05);

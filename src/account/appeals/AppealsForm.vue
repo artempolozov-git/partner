@@ -79,7 +79,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .button-close {
     transition: 0.3s;
     position: absolute;
@@ -144,23 +144,8 @@
     font-family: SourceSansPro;
   }
   .input__container > input, .select__container > select, .data__container > textarea{
-    width: 100%;
-    height: 70px;
+    @extend %inputStyle;
     margin-bottom: 30px;
-    padding: 20px;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: SourceSansPro;
-    color: #222222;
-    border-radius: 15px;
-    background-color: #F6F6F6;
-    border: 2px #F6F6F6 solid;
-    resize: none;
-  }
-  .input__container > input:focus, .select__container > select:focus, .data__container > textarea:focus {
-    outline: none;
-    background-color: #ffffff;
-    border: 2px #e1e1e1 solid;
   }
   .data__container > textarea {
     height: 150px;
@@ -179,24 +164,8 @@
     margin-bottom: 10px;
   }
   .button__container {
-    display: flex;
+    @extend %buttons;
     margin: 50px auto 0;
-    padding: 20px 80px;
-    font-family: SourceSansPro;
-    font-size: 18px;
-    font-weight: bold;
-    box-sizing: border-box;
-    color: #5222d0;
-    background-color: rgba(82, 34, 208, 0.11);
-    border-radius: 30px;
-    transition: all 0.2s ease-out;
-    border: none;
-  }
-  .button__container:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #5222D0;
-    transition: all 0.2s ease-out;
   }
   @media only screen and (max-width : 1700px) {
     .overlay {

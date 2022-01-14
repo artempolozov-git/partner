@@ -66,16 +66,14 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .home__advantages__container {
   padding: 0 100px;
   margin: 100px 0;
   box-sizing: border-box;
 }
 .title__section {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0 0 50px;
+  @extend %titleSection;
 }
 .advantages__grid {
   display: grid;
@@ -98,7 +96,7 @@
   margin: 0;
 }
 .advantages__description {
-  color: #606060;
+  color: $color-text;
   margin-top: 10px;
 }
 @media only screen and (max-width : 1700px) {

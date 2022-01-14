@@ -103,16 +103,12 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page-main__container {
-  padding: 0 100px 100px;
+  padding: $padding-main__container;
 }
 .title__wrapper {
-  padding: 50px 100px;
-  margin-top: 30px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
+  @extend %titleBackground;
 }
 .title__pages {
   font-size: 38px;
@@ -127,10 +123,10 @@
   box-sizing: border-box;
 }
 .text {
-  color: #606060;
+  color: $color-text;
 }
 .slogan {
-  font-size: 36px;
+  font-size: $section-title-fontsize;
   text-align: center;
   font-weight: bold;
   margin: 50px 0;
@@ -149,9 +145,7 @@
   background-position: center;
 }
 .title__section {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0 0 50px;
+  @extend %titleSection;
 }
 .directions__container {
   padding: 0 100px;

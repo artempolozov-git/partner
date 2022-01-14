@@ -84,6 +84,7 @@
         data() {
             return {
                 swiperOption: {
+                    grabCursor: true,
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
@@ -99,16 +100,13 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .home__main-screen__container {
   margin-top: 30px;
   box-sizing: border-box;
 }
 .main__block {
-  padding: 50px 150px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
+  @extend %bannerBackground;
 }
 .title {
   font-size: 60px;
@@ -116,7 +114,7 @@
   margin-bottom: 40px;
 }
 .advantages__content {
-  color: #606060;
+  color: $color-text;
   font-size: 21px;
   font-weight: bold;
 }
@@ -136,22 +134,8 @@
   margin-left: 100px;
 }
 .feedback-button {
-  width: max-content;
-  padding: 20px 60px;
+  @extend %buttons;
   margin-top: 50px;
-  background-color: rgba(82, 34, 208, 0.1);
-  color: #5222d0;
-  font-weight: bold;
-  box-sizing: border-box;
-  border-radius: 30px;
-  transition: all 0.2s ease-out;
-}
-.feedback-button:hover {
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-  background-color: #5222D0;
-  transition: all 0.2s ease-out;
 }
 .swiper-slide {
   display: flex;

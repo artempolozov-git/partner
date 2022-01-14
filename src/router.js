@@ -42,6 +42,22 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/business-automation',
+            name: 'business-automation',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/services/BusinessAutomation.vue')
+            },
+            meta: {
+                title: 'Автоматизация бизнеса | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/consulting',
             name: 'consulting',
             components: {
@@ -49,7 +65,7 @@ const router = new Router({
                 footer: Footer,
                 reviews: Reviews,
                 //aside: Aside,
-                default: () => import('@/pages/Consulting.vue')
+                default: () => import('@/pages/services/Consulting.vue')
             },
             meta: {
                 title: 'Консалтинговые услуги | PARTNER',

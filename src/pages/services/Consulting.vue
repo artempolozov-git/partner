@@ -61,7 +61,7 @@
         сотрудников определенным прикладным навыкам.
         <br><b>Мы предоставляем услуги:</b>
       </p>
-      <div class="list__wrapper">
+      <div class="list__container">
         <ul class="list__block">
           <li class="list__text"><span>Управленческий консалтинг</span></li>
           <li class="list__text"><span>Консалтинг по вопросам ведения бухгалтерии</span></li>
@@ -118,9 +118,9 @@
     </div>
 
     <div class="section__container-links">
-      <h2 class="title__container">Другие услуги Partner:</h2>
+      <h2 class="title__section">Другие услуги Partner:</h2>
       <div class="directions__wrapper">
-        <div class="direction">
+        <div class="direction" v-on:click="goToPage('business-automation')">
           <span>Автоматизация бизнеса</span>
         </div>
         <div class="direction">
@@ -149,13 +149,19 @@
         name: "Consulting",
         components: {
             LottieAnimation
-        }
+        },
+        methods: {
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
+        },
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page-main__container {
-  padding: 0 100px 100px;
+  padding: $padding-main__container;
 }
 .title__pages {
   font-size: 38px;
@@ -167,47 +173,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 150px;
-  box-sizing: border-box;
-  margin-top: 50px;
-  border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
+  @extend %bannerBackground;
 }
 .title {
-  font-size: 36px;
+  font-size: $section-title-fontsize;
   font-weight: bold;
   color: #5222D0;
   margin-bottom: 20px;
 }
 .description {
-  color: #606060;
+  color: $color-text;
 }
 .image {
   width: 50%;
   margin-left: 100px;
 }
 .feedback-button {
-  width: max-content;
-  padding: 20px 60px;
+  @extend %buttons;
   margin-top: 50px;
-  background-color: rgba(82, 34, 208, 0.1);
-  color: #5222d0;
-  font-weight: bold;
-  box-sizing: border-box;
-  border-radius: 30px;
-  transition: all 0.2s ease-out;
-}
-.feedback-button:hover {
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-  background-color: #5222D0;
-  transition: all 0.2s ease-out;
 }
 .section__container {
-  padding: 0 100px;
-  margin: 0 0 100px;
-  box-sizing: border-box;
+  @extend %sectionContainer;
 }
 .section__container-links {
   padding: 0 100px;
@@ -217,19 +203,17 @@
   padding: 0 130px;
   margin: 70px 0;
   box-sizing: border-box;
-}
-.subtitle {
-  font-size: 24px;
-  color: #0086C9;
-  font-weight: bold;
-}
-.text {
-  color: #606060;
+  .subtitle {
+    font-size: 24px;
+    color: #0086C9;
+    font-weight: bold;
+  }
+  .text {
+    color: $color-text;
+  }
 }
 .title__section {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0 0 50px;
+  @extend %titleSection;
 }
 .point-list__wrapper {
   padding-left: 30px;
@@ -238,14 +222,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-}
-.point-list__text {
-  font-size: 21px;
-  font-weight: bold;
-}
-.point-list__image {
-  width: 3vw;
-  margin-right: 15px;
+    .point-list__text {
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .point-list__image {
+      width: 3vw;
+      margin-right: 15px;
+    }
 }
 .list__text {
   font-size: 21px;
@@ -280,7 +264,7 @@
   margin: 0;
 }
 .advantages__description {
-  color: #606060;
+  color: $color-text;
   margin-top: 10px;
 }
 .directions__wrapper  {
@@ -295,7 +279,7 @@
   margin: 0 30px 30px 0;
   border-radius: 50px;
   border: 1px solid #606060;
-  color: #606060;
+  color: $color-text;
 }
 .direction:hover {
   border: 1px solid #0086C9;

@@ -16,9 +16,9 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .home__container {
-  padding: 0 100px 150px;
+  padding: $padding-main__container;
 }
 @media only screen and (max-width : 1700px) {
   .home__container {

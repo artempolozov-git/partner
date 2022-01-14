@@ -31,16 +31,12 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .account__container {
-  padding: 0 100px 100px;
+  padding: $padding-main__container;
 }
 .title__wrapper {
-  padding: 50px 100px;
-  margin-top: 30px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
+  @extend %titleBackground;
 }
 .page-title {
   font-size: 38px;

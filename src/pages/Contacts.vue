@@ -61,16 +61,12 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .page-main__container {
-    padding: 0 100px 100px;
+    padding: $padding-main__container;
   }
   .title__wrapper {
-    padding: 50px 100px;
-    margin-top: 30px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background: linear-gradient(45deg, rgba(32, 195, 208, 0.11) 50%, rgba(82, 34, 208, 0.11) 100%);
+    @extend %titleBackground;
   }
   .title__pages {
     font-size: 38px;
@@ -116,7 +112,7 @@
   }
   .time-works__text {
     margin-top: 10px;
-    color: #606060;
+    color: $color-text;
     font-size: 20px;
   }
   .feedback-button__wrapper {
@@ -125,22 +121,11 @@
     box-sizing: border-box;
   }
   .feedback-button {
-    width: max-content;
+    @extend %buttons;
     padding: 30px 70px;
     margin-right: 40px;
-    background-color: rgba(82, 34, 208, 0.1);
-    color: #5222d0;
-    font-weight: bold;
     font-size: 24px;
-    box-sizing: border-box;
-    border-radius: 100px;
-    transition: all 0.2s ease-out;
-  }
-  .feedback-button:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #5222D0;
-    transition: all 0.2s ease-out;
+
   }
   .map-location {
     width: 100%;

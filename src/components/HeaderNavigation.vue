@@ -9,8 +9,8 @@
           <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
-          <p>Автоматизация бизнеса</p>
-          <p>Автоматизация учреждений<br> госсектора</p>
+          <p v-on:click="goToPage('business-automation')">Автоматизация бизнеса</p>
+          <p>Автоматизация учреждений госсектора</p>
           <p v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
           <p>Бухгалтерское обслуживание</p>
           <p>IT - аутсорсинг</p>
@@ -81,7 +81,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .header-navigations__block {
     display: flex;
     align-items: center;
