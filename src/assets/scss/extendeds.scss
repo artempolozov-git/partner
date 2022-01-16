@@ -21,7 +21,7 @@
   background-color: rgba(82, 34, 208, 0.1);
   color: #5222d0;
   font-family: SourceSansPro;
-  font-size: 18px;
+  font-size: $buttons-inputs-fontsize;
   font-weight: bold;
   border-radius: 100px;
   border: none;
@@ -50,7 +50,7 @@
   height: 70px;
   padding: 20px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: $buttons-inputs-fontsize;
   font-family: SourceSansPro;
   color: #222222;
   border-radius: 15px;
@@ -67,6 +67,12 @@
   font-size: $section-title-fontsize;
   font-weight: bold;
   margin: 0 0 30px;
+}
+%titlePages {
+  font-size: $page-title-fontsize;
+  font-weight: bold;
+  margin: 30px 0 50px;
+  padding: 0 100px;
 }
 %sectionContainer {
   padding: 0 100px;

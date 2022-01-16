@@ -100,7 +100,7 @@
     background-color: #ffffff;
   }
   .title-form {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;

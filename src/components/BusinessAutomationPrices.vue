@@ -149,7 +149,7 @@
             return {
                 swiperOption: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 40,
                     centeredSlides: true,
                     grabCursor: true,
                     pagination: {
@@ -186,7 +186,7 @@
 }
 .price {
   text-align: center;
-  font-size: 24px;
+  font-size: $subtitle-fontsize;
   font-weight: bold;
   color: #5222d0;
   margin-bottom: 30px;
@@ -198,7 +198,7 @@
     }
 }
 .list__block {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
     & li {
       color: #5222d0;
     }

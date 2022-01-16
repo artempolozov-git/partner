@@ -39,7 +39,7 @@
   @extend %titleBackground;
 }
 .page-title {
-  font-size: 38px;
+  font-size: $page-title-fontsize;
   font-weight: bold;
 }
 .tabs__container {

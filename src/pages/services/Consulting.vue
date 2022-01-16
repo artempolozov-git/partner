@@ -76,68 +76,21 @@
     <div class="section__container">
       <h1 class="title__section">Почему Partner?</h1>
       <div class="advantages__grid">
-        <!--1 block-->
-        <div class="advantages__block">
-          <img src="@/assets/icons/flame.svg">
-          <div class="advantages__information__wrapper">
-            <h2 class="advantages__title">Высокий профессионализм</h2>
-            <p class="advantages__description">Каждый наш сотрудник имеет большой опыт работы, а их функционал узко
-              регламентирован, что позволяет отлично разбираться в своей сфере.</p>
-          </div>
-        </div>
-        <!--2 block-->
-        <div class="advantages__block">
-          <img src="@/assets/icons/star.svg">
-          <div class="advantages__information__wrapper">
-            <h2 class="advantages__title">Богатый опыт</h2>
-            <p class="advantages__description">Мы на рынке более 15 лет, и за это время смогли качественно оптимизировать
-              наш рабочий процесс, а также отработать любые сложные ситуации.</p>
-          </div>
-        </div>
-        <!--3 block-->
-        <div class="advantages__block">
-          <img src="@/assets/icons/layers.svg">
-          <div class="advantages__information__wrapper">
-            <h2 class="advantages__title">Комплексный подход</h2>
-            <p class="advantages__description">В нашей команде трудятся специалисты со знаниями в различных сферах,
-              что позволяет подойти к любой вашей проблеме комплексно, увеличив скорость
-              ее решения и качество итогового результата.</p>
-          </div>
-        </div>
-        <!--4 block-->
-        <div class="advantages__block">
-          <img src="@/assets/icons/clip.svg">
-          <div class="advantages__information__wrapper">
-            <h2 class="advantages__title">Ваша информация в надежных руках</h2>
-            <p class="advantages__description">В штате нашей компании присутствуют IT-специалисты, которые умеют строить
-              нагруженные и высоко доступные информационные системы , обеспечивающие
-              сохранность и конфиденциальность вашей информации.</p>
-          </div>
-        </div>
+        <advantages v-for="(advantage, Advantages) in consultingAdvantages"
+                    :key="Advantages"
+                    :title="advantage.title"
+                    :description="advantage.description"
+                    :images="advantage.images"></advantages>
       </div>
     </div>
 
     <div class="section__container-links">
       <h2 class="title__section">Другие услуги Partner:</h2>
       <div class="directions__wrapper">
-        <div class="direction" v-on:click="goToPage('business-automation')">
-          <span>Автоматизация бизнеса</span>
-        </div>
-        <div class="direction">
-          <span>Автоматизация учреждений госсектора</span>
-        </div>
-        <div class="direction">
-          <span>Бухгалтерское обслуживание</span>
-        </div>
-        <div class="direction">
-          <span>IT - аутсорсинг</span>
-        </div>
-        <div class="direction">
-          <span>Продажа, внедрение и поддержка программ «1С»</span>
-        </div>
-        <div class="direction">
-          <span>Продажа и настройка торгового оборудования</span>
-        </div>
+        <other-services v-for="(pages, otherLinks) in servicesLinks"
+                        :key="otherLinks"
+                        :link="pages.link"
+                        :id="pages.id"></other-services>
       </div>
     </div>
   </div>
@@ -145,10 +98,66 @@
 
 <script>
     import LottieAnimation from 'lottie-web-vue'
+    import Advantages from "@/components/Advantages";
+    import OtherServices from "@/components/OtherServices";
     export default {
         name: "Consulting",
         components: {
-            LottieAnimation
+            OtherServices,
+            Advantages,
+            LottieAnimation,
+        },
+        data () {
+          return {
+              consultingAdvantages: [
+                  {
+                      title: 'Высокий профессионализм',
+                      description: 'Каждый наш сотрудник имеет большой опыт работы, а их функционал узко регламентирован, что позволяет отлично разбираться в своей сфере.',
+                      images: require('@/assets/icons/flame.svg'),
+                  },
+                  {
+                      title: 'Богатый опыт',
+                      description: 'Мы на рынке более 15 лет, и за это время смогли качественно оптимизировать наш рабочий процесс, а также отработать любые сложные ситуации.',
+                      images: require('@/assets/icons/star.svg'),
+                  },
+                  {
+                      title: 'Комплексный подход',
+                      description: 'В нашей команде трудятся специалисты со знаниями в различных сферах, что позволяет подойти к любой вашей проблеме комплексно, увеличив скорость ее решения и качество итогового результата.',
+                      images: require('@/assets/icons/layers.svg'),
+                  },
+                  {
+                      title: 'Ваша информация в надежных руках',
+                      description: 'В штате нашей компании присутствуют IT-специалисты, которые умеют строить нагруженные и высоко доступные информационные системы , обеспечивающие сохранность и конфиденциальность вашей информации.',
+                      images: require('@/assets/icons/clip.svg'),
+                  },
+              ],
+              servicesLinks: [
+                  {
+                    link: 'Автоматизация бизнеса',
+                    id: 'business-automation',
+                  },
+                  {
+                      link: 'Автоматизация учреждений госсектора',
+                      id: 'public-automation',
+                  },
+                  {
+                      link: 'Бухгалтерское обслуживание',
+                      id: '',
+                  },
+                  {
+                      link: 'IT - аутсорсинг',
+                      id: '',
+                  },
+                  {
+                      link: 'Продажа, внедрение и поддержка программ «1С»',
+                      id: '',
+                  },
+                  {
+                      link: 'Продажа и настройка торгового оборудования',
+                      id: '',
+                  },
+              ],
+          }
         },
         methods: {
             goToPage(page) {
@@ -164,10 +173,7 @@
   padding: $padding-main__container;
 }
 .title__pages {
-  font-size: 38px;
-  font-weight: bold;
-  margin-top: 30px;
-  padding: 0 100px;
+  @extend %titlePages;
 }
 .page__banner__container {
   display: flex;
@@ -204,7 +210,7 @@
   margin: 70px 0;
   box-sizing: border-box;
   .subtitle {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     color: #0086C9;
     font-weight: bold;
   }
@@ -223,7 +229,7 @@
   align-items: center;
   margin-bottom: 30px;
     .point-list__text {
-      font-size: 21px;
+      font-size: $additional-fontsize;
       font-weight: bold;
     }
     .point-list__image {
@@ -232,7 +238,7 @@
     }
 }
 .list__text {
-  font-size: 21px;
+  font-size: $additional-fontsize;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -250,42 +256,8 @@
   grid-row-gap: 30px;
   margin-top: 50px;
 }
-.advantages__block {
-  display: flex;
-  align-items: start;
-}
-.advantages__block > img {
-  width: 4vw;
-  margin-right: 20px;
-}
-.advantages__title {
-  font-size: 21px;
-  font-weight: bold;
-  margin: 0;
-}
-.advantages__description {
-  color: $color-text;
-  margin-top: 10px;
-}
 .directions__wrapper  {
   display: flex;
   flex-wrap: wrap;
-}
-.direction  {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 50px;
-  margin: 0 30px 30px 0;
-  border-radius: 50px;
-  border: 1px solid #606060;
-  color: $color-text;
-}
-.direction:hover {
-  border: 1px solid #0086C9;
-  background-color: rgba(0, 134, 201, 0.11);
-  color: #0086C9;
-  text-decoration: underline;
-  cursor: pointer;
 }
 </style>

@@ -58,6 +58,22 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/public-automation',
+            name: 'public-automation',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/services/PublicAutomation.vue')
+            },
+            meta: {
+                title: 'Автоматизация учреждений госсектора | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/consulting',
             name: 'consulting',
             components: {

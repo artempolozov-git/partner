@@ -135,7 +135,7 @@
     background-color: #ffffff;
   }
   .title-form {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
@@ -155,7 +155,7 @@
     margin-bottom: 15px;
   }
   .radio-button__container {
-    font-size: 18px;
+    font-size: $buttons-inputs-fontsize;
     font-family: SourceSansPro;
     color: #222222;
     margin-bottom: 30px;

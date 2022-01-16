@@ -115,7 +115,7 @@
 }
 .advantages__content {
   color: $color-text;
-  font-size: 21px;
+  font-size:  $additional-fontsize;
   font-weight: bold;
 }
 .advantages__wrapper {

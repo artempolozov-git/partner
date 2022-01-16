@@ -62,7 +62,7 @@
 }
 .contacts {
   text-align: right;
-  font-size: 21px;
+  font-size:  $additional-fontsize;
 }
 .phone > a, .email > a {
   cursor: pointer;

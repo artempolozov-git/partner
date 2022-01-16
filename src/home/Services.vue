@@ -23,7 +23,7 @@
           </div>
         </div>
         <!--Второй блок справа-->
-        <div class="service">
+        <div class="service" v-on:click="goToPage('public-automation')">
           <div class="service-information">
             <h2 class="service-title">Автоматизация учреждений госсектора</h2>
             <p class="service-description">Предложим вам оптимальные решения для автоматизации бухгалтерского,
@@ -158,7 +158,7 @@
 }
 .service-title {
   font-weight: bold;
-  font-size: 21px;
+  font-size: $additional-fontsize;
   margin: 0;
 }
 .service-description {

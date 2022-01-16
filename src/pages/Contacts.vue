@@ -69,7 +69,7 @@
     @extend %titleBackground;
   }
   .title__pages {
-    font-size: 38px;
+    font-size: $page-title-fontsize;
     font-weight: bold;
   }
   .contacts-main__container {
@@ -90,7 +90,7 @@
     margin-right: 15px;
   }
   .contacts-text > a {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     font-weight: bold;
     text-decoration: none;
     color: #222222;
@@ -107,7 +107,7 @@
     align-items: start;
   }
   .title__blocks {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     font-weight: bold;
   }
   .time-works__text {
@@ -124,8 +124,7 @@
     @extend %buttons;
     padding: 30px 70px;
     margin-right: 40px;
-    font-size: 24px;
-
+    font-size: $subtitle-fontsize;
   }
   .map-location {
     width: 100%;

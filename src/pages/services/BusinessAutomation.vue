@@ -33,61 +33,58 @@
     </div>
 
     <div class="section__container">
-      <h2 class="title__section">Какие проблемы решает автоматизация бизнеса?</h2>
-      <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/one.svg"></div>
-        <div class="list__wrapper">
-          <div class="list-title">Контроль и учет</div>
-          <ul class="list__block">
-            <li class="list__text"><span>Контроль движения каждой единицы продукции или товара в организации</span></li>
-            <li class="list__text"><span>Производственные процессы с дистанционным управлением</span></li>
-            <li class="list__text"><span>Учет всей продукции на производстве, на складе и во всей розничной сети</span></li>
-            <li class="list__text"><span>Контроль расходов и доходов по каждой отдельной статье</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/two.svg"></div>
-        <div class="list__wrapper">
-          <div class="list-title">Повышение эффективности</div>
-          <ul class="list__block">
-            <li class="list__text"><span>Увеличение производства и продаж</span></li>
-            <li class="list__text"><span>Идентификация товаров / услуг - «локомотивов» бизнеса</span></li>
-            <li class="list__text"><span>Создание базы постоянных клиентов</span></li>
-            <li class="list__text"><span>Формирование эффективной маркетинговой политики</span></li>
-            <li class="list__text"><span>Исключение ошибок в учете клиентов</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/three.svg"></div>
-        <div class="list__wrapper">
-          <div class="list-title">Снижение потерь</div>
-          <ul class="list__block">
-            <li class="list__text"><span>Предотвращение краж и мошеннечества</span></li>
-            <li class="list__text"><span>Выявление неэффективных работников</span></li>
-            <li class="list__text"><span>Создание базы постоянных клиентов</span></li>
-            <li class="list__text"><span>Сокращение сотрудников за счет автоматизации процессов</span></li>
-            <li class="list__text"><span>Устранение ошибок при фиксации реализаций товаров и услуг</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="list__container">
-        <div class="number-icon"><img src="@/assets/icons/numbers/four.svg"></div>
-        <div class="list__wrapper">
-          <div class="list-title">Аналитика и статистика</div>
-          <ul class="list__block">
-            <li class="list__text"><span>Анализ динамики покупок и продаж за период</span></li>
-            <li class="list__text"><span>Доступная статистика по товарообороту, прибыли и убыткам, а так же рентабельности компании в целом</span></li>
-            <li class="list__text"><span>Управленческая отчетность для всех производств, складов, торговых точек в единой базе</span></li>
-            <li class="list__text"><span>Прогнозирование и формирование бизнес-показателей, необходимых для роста вашего бизнеса</span></li>
-          </ul>
-        </div>
+    <h2 class="title__section">Какие проблемы решает автоматизация бизнеса?</h2>
+    <div class="list__container indent-bottom">
+      <div class="number-icon"><img src="@/assets/icons/numbers/one.svg"></div>
+      <div class="list__wrapper">
+        <div class="list-title">Контроль и учет</div>
+        <ul class="list__block">
+          <li class="list__text"><span>Контроль движения каждой единицы продукции или товара в организации</span></li>
+          <li class="list__text"><span>Производственные процессы с дистанционным управлением</span></li>
+          <li class="list__text"><span>Учет всей продукции на производстве, на складе и во всей розничной сети</span></li>
+          <li class="list__text"><span>Контроль расходов и доходов по каждой отдельной статье</span></li>
+        </ul>
       </div>
     </div>
+    <div class="list__container indent-bottom">
+      <div class="number-icon"><img src="@/assets/icons/numbers/two.svg"></div>
+      <div class="list__wrapper">
+        <div class="list-title">Повышение эффективности</div>
+        <ul class="list__block">
+          <li class="list__text"><span>Увеличение производства и продаж</span></li>
+          <li class="list__text"><span>Идентификация товаров / услуг - «локомотивов» бизнеса</span></li>
+          <li class="list__text"><span>Создание базы постоянных клиентов</span></li>
+          <li class="list__text"><span>Формирование эффективной маркетинговой политики</span></li>
+          <li class="list__text"><span>Исключение ошибок в учете клиентов</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="list__container indent-bottom">
+      <div class="number-icon"><img src="@/assets/icons/numbers/three.svg"></div>
+      <div class="list__wrapper">
+        <div class="list-title">Снижение потерь</div>
+        <ul class="list__block">
+          <li class="list__text"><span>Предотвращение краж и мошеннечества</span></li>
+          <li class="list__text"><span>Выявление неэффективных работников</span></li>
+          <li class="list__text"><span>Создание базы постоянных клиентов</span></li>
+          <li class="list__text"><span>Сокращение сотрудников за счет автоматизации процессов</span></li>
+          <li class="list__text"><span>Устранение ошибок при фиксации реализаций товаров и услуг</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="list__container">
+      <div class="number-icon"><img src="@/assets/icons/numbers/four.svg"></div>
+      <div class="list__wrapper">
+        <div class="list-title">Аналитика и статистика</div>
+        <ul class="list__block">
+          <li class="list__text"><span>Анализ динамики покупок и продаж за период</span></li>
+          <li class="list__text"><span>Доступная статистика по товарообороту, прибыли и убыткам, а так же рентабельности компании в целом</span></li>
+          <li class="list__text"><span>Управленческая отчетность для всех производств, складов, торговых точек в единой базе</span></li>
+          <li class="list__text"><span>Прогнозирование и формирование бизнес-показателей, необходимых для роста вашего бизнеса</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
     <div class="offer-banner__container">
       <div class="offers__wrapper">
@@ -135,24 +132,10 @@
     <div class="section__container-links">
       <h2 class="title__section">Другие услуги Partner:</h2>
       <div class="directions__wrapper">
-        <div class="direction">
-          <span>Автоматизация учреждений госсектора</span>
-        </div>
-        <div class="direction" v-on:click="goToPage('consulting')">
-          <span>Консалтинговые услуги</span>
-        </div>
-        <div class="direction">
-          <span>Бухгалтерское обслуживание</span>
-        </div>
-        <div class="direction">
-          <span>IT - аутсорсинг</span>
-        </div>
-        <div class="direction">
-          <span>Продажа, внедрение и поддержка программ «1С»</span>
-        </div>
-        <div class="direction">
-          <span>Продажа и настройка торгового оборудования</span>
-        </div>
+        <other-services v-for="(pages, otherLinks) in servicesLinks"
+                        :key="otherLinks"
+                        :link="pages.link"
+                        :id="pages.id"></other-services>
       </div>
     </div>
   </div>
@@ -161,11 +144,43 @@
 <script>
     import LottieAnimation from 'lottie-web-vue';
     import BusinessAutomationPrices from "@/components/BusinessAutomationPrices";
+    import OtherServices from "@/components/OtherServices";
     export default {
         name: "BusinessAutomation",
         components: {
+            OtherServices,
             BusinessAutomationPrices,
             LottieAnimation,
+        },
+        data () {
+            return {
+                servicesLinks: [
+                    {
+                        link: 'Автоматизация учреждений госсектора',
+                        id: 'public-automation',
+                    },
+                    {
+                        link: 'Консалтинговые услуги',
+                        id: 'consulting',
+                    },
+                    {
+                        link: 'Бухгалтерское обслуживание',
+                        id: '',
+                    },
+                    {
+                        link: 'IT - аутсорсинг',
+                        id: '',
+                    },
+                    {
+                        link: 'Продажа, внедрение и поддержка программ «1С»',
+                        id: '',
+                    },
+                    {
+                        link: 'Продажа и настройка торгового оборудования',
+                        id: '',
+                    },
+                ],
+            }
         },
         methods: {
             goToPage(page) {
@@ -181,10 +196,7 @@
   padding: $padding-main__container;
 }
 .title__pages {
-  font-size: 38px;
-  font-weight: bold;
-  margin-top: 30px;
-  padding: 0 100px;
+  @extend %titlePages;
 }
 .page__banner__container {
   display: flex;
@@ -220,7 +232,7 @@
   margin: 70px 0;
   box-sizing: border-box;
     .subtitle {
-      font-size: 24px;
+      font-size: $subtitle-fontsize;
       color: #0086C9;
       font-weight: bold;
     }
@@ -239,7 +251,7 @@
 }
 .list-title {
   padding-left: 20px;
-  font-size: 21px;
+  font-size: $additional-fontsize;
   font-weight: bold;
 }
 .list__text {
@@ -320,7 +332,7 @@
   align-items: center;
   margin-bottom: 30px;
   .point-list__text {
-    font-size: 21px;
+    font-size: $additional-fontsize;
     font-weight: bold;
   }
   .point-list__image {

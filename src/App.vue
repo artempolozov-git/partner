@@ -67,9 +67,4 @@ export default {
     align-self: center;
     width: -webkit-fill-available;
   }
-  @media only screen and (max-width : 1700px) {
-    body {
-      font-size: 16px;
-    }
-  }
 </style>

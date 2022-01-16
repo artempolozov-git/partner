@@ -21,7 +21,7 @@
       <div class="team-photography"></div>
     </div>
 
-    <div class="directions__container">
+    <div class="section__container">
       <h2 class="title__section">Основные направления</h2>
       <div class="directions__wrapper">
         <div class="direction" style="background-color: rgba(32,195,208,0.15)">
@@ -57,37 +57,17 @@
       </div>
     </div>
 
-      <div class="arrow__container">
-        <h2 class="title__section">Как построена наша работа?</h2>
-        <div class="arrow-list__wrapper">
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Мы постоянно обучаемся чему-то новому и повышаем квалификацию наших сотрудников</span>
-          </div>
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Всегда работаем на результат, соблюдая все договоренности и сроки</span>
-          </div>
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Ответственно подходим к безопасности и конфиденциальности данных наших клиентов</span>
-          </div>
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Отвечаем за результат деньгами и репутацией</span>
-          </div>
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Применяем «лучшие практики» выработанные за более чем 15 лет опыта на рынке</span>
-          </div>
-          <div class="arrow-list__block">
-            <img class="arrow-icon" src="@/assets/icons/arrow.svg">
-            <span class="arrow-list__text">Мы команда! Все отделы работают слаженно и взаимодействуют друг с другом для достижения цели</span>
-          </div>
+    <div class="section__container">
+      <h2 class="title__section">Что мы предлагаем:</h2>
+      <div class="arrow-list__wrapper">
+        <div class="arrow-list__block" v-for="(list, arrowList) in listContent" :key="arrowList">
+          <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+          <span class="arrow-list__text">{{list.text}}</span>
         </div>
-        <div class="arrow-list__text">Истории успехов наших партнеров вдохновляют нас на постоянное развитие, построение новых моделей взаимодействия
-          и поиск наиболее оптимальных путей решения задач!</div>
       </div>
+      <div class="arrow-list__text">Истории успехов наших партнеров вдохновляют нас на постоянное развитие, построение новых моделей взаимодействия
+        и поиск наиболее оптимальных путей решения задач!</div>
+    </div>
 
     <div class="slogan down-indent">Присоединяйтесь - вместе мы создаем будущее!</div>
   </div>
@@ -100,6 +80,30 @@
         components: {
             VueEasyTooltip
         },
+        data () {
+            return {
+                listContent: [
+                    {
+                        text: 'Мы постоянно обучаемся чему-то новому и повышаем квалификацию наших сотрудников',
+                    },
+                    {
+                        text: 'Всегда работаем на результат, соблюдая все договоренности и сроки',
+                    },
+                    {
+                        text: 'Ответственно подходим к безопасности и конфиденциальности данных наших клиентов',
+                    },
+                    {
+                        text: 'Отвечаем за результат деньгами и репутацией',
+                    },
+                    {
+                        text: 'Применяем «лучшие практики», выработанные за более чем 15 лет опыта на рынке',
+                    },
+                    {
+                        text: 'Мы команда! Все отделы работают слаженно и взаимодействуют друг с другом для достижения цели',
+                    },
+                ]
+            }
+        },
     }
 </script>
 
@@ -111,11 +115,11 @@
   @extend %titleBackground;
 }
 .title__pages {
-  font-size: 38px;
+  font-size: $page-title-fontsize;
   font-weight: bold;
 }
 .subtitle {
-  font-size: 24px;
+  font-size: $subtitle-fontsize;
 }
 .text__container {
   padding: 0 100px;
@@ -132,6 +136,9 @@
   margin: 50px 0;
   color: #5222d0;
 }
+.section__container {
+  @extend %sectionContainer;
+}
 .down-indent {
   margin: 0;
 }
@@ -146,11 +153,6 @@
 }
 .title__section {
   @extend %titleSection;
-}
-.directions__container {
-  padding: 0 100px;
-  margin: 0 0 100px;
-  box-sizing: border-box;
 }
 .directions__wrapper  {
   display: flex;
@@ -175,11 +177,6 @@
 .direction__indent-right {
   margin-right: 0;
 }
-.arrow__container {
-  padding: 0 100px;
-  margin: 0 0 100px;
-  box-sizing: border-box;
-}
 .arrow-list__wrapper {
   padding-left: 30px;
 }
@@ -190,7 +187,7 @@
 }
 .arrow-list__text {
   font-weight: bold;
-  font-size: 21px;
+  font-size: $additional-fontsize;
 }
 .arrow-icon {
   width: 1.3vw;

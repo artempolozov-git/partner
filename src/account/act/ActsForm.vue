@@ -128,7 +128,7 @@
     background-color: #ffffff;
   }
   .title-form {
-    font-size: 24px;
+    font-size: $subtitle-fontsize;
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
@@ -164,7 +164,7 @@
   .input-date {
     padding: 20px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: $buttons-inputs-fontsize;
     font-family: SourceSansPro;
     color: #222222;
     border-radius: 15px;
