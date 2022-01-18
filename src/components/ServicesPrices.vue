@@ -3,7 +3,7 @@
     <div class="prices-title">{{title}}</div>
     <div class="price">{{sum}}</div>
     <div class="prices__text-filling">{{text}}</div>
-    <div class="feedback-button">
+    <div class="feedback-button" @click="FeedbackForm">
       <span>Оставить заявку</span>
     </div>
   </div>
@@ -16,6 +16,12 @@
           title: String,
           sum: String,
           text: String,
+        },
+        methods: {
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
         },
     }
 </script>

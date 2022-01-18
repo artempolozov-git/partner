@@ -42,8 +42,8 @@
               <input type="radio" id="standart" name="select" value="Стандартная срочность" checked>
               <label for="standart">Стандартная срочность</label>
             </div>
-              <input type="radio" id="extra" name="select" value="Экстренное">
-              <label for="extra">Экстренная (может потребоваться дополнительная оплата)</label>
+            <input type="radio" id="extra" name="select" value="Экстренное">
+            <label for="extra">Экстренная (может потребоваться дополнительная оплата)</label>
           </div>
 
           <div class="input-title">Описание проблемы:</div>

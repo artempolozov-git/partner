@@ -12,8 +12,8 @@
           <p v-on:click="goToPage('business-automation')">Автоматизация бизнеса</p>
           <p v-on:click="goToPage('public-automation')">Автоматизация учреждений госсектора</p>
           <p v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
-          <p>Бухгалтерское обслуживание</p>
-          <p>IT - аутсорсинг</p>
+          <p v-on:click="goToPage('accounting-services')">Бухгалтерское обслуживание</p>
+          <p v-on:click="goToPage('it-outsourcing')">IT - аутсорсинг</p>
         </div>
       </div>
 

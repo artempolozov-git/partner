@@ -82,7 +82,7 @@
   }
   .overlay {
     height: 100%;
-    width: 30em;
+    width: 30vw;
     top: 50%;
     right: 0;
     bottom: 0;

@@ -1,6 +1,6 @@
 <template>
   <section class="footer__form__container">
-    <form class="form__wrapper" id="feedback-form" action="" method="POST">
+    <form class="form__wrapper" id="footer-form" action="" method="POST">
       <div class="form__title__container">
         <h2 class="title__section">Остались вопросы?</h2>
         <p class="subtitle">Пожалуйста оставьте свои контактные данные,

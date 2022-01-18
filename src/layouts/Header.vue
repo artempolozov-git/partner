@@ -4,7 +4,7 @@
       <div class="header-contacts__block">
         <div class="logotype" v-on:click="goToPage('/')" title="Главная"><img src="@/assets/icons/logotype.svg"></div>
         <div class="feedback__wrapper">
-          <div class="feedback-button">
+          <div class="feedback-button" @click="FeedbackForm">
             <span>Обратная связь</span>
           </div>
           <div class="contacts">
@@ -31,7 +31,11 @@
             goToPage(page) {
                 this.$router.push(page);
                 window.scrollTo(0,0);
-            }
+            },
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
         },
     }
 </script>

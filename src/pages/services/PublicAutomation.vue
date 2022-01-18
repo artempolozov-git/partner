@@ -6,7 +6,7 @@
       <div class="banner-title__wrapper">
         <h2 class="title">Автоматизация для достижения результата, а не для самой автоматизации!</h2>
         <div class="description">Внедряем и поддерживаем системы автоматизации учреждений госсектора!</div>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -122,6 +122,12 @@
         components: {
             ServicesPrices,
             OtherServices,
+        },
+        methods: {
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
         },
         data () {
             return {
@@ -239,11 +245,11 @@
                     },
                     {
                         link: 'Бухгалтерское обслуживание',
-                        id: '',
+                        id: 'accounting-services',
                     },
                     {
                         link: 'IT - аутсорсинг',
-                        id: '',
+                        id: 'it-outsourcing',
                     },
                     {
                         link: 'Продажа, внедрение и поддержка программ «1С»',

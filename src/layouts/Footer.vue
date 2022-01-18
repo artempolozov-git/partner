@@ -5,7 +5,7 @@
       <div class="footer-contacts__block">
         <div class="logotype"><img src="@/assets/icons/logotype-white.svg"></div>
         <div class="feedback__wrapper">
-          <div class="feedback-button">
+          <div class="feedback-button" @click="FeedbackForm">
             <span>Обратная связь</span>
           </div>
           <div class="contacts">
@@ -24,7 +24,13 @@
     import FooterNavigation from "@/components/FooterNavigation";
     export default {
         name: "Footer",
-        components: {FooterNavigation, FooterForm}
+        components: {FooterNavigation, FooterForm},
+        methods: {
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
+        },
     }
 </script>
 

@@ -11,6 +11,8 @@ Vue.use(KTabs);
 import LottieAnimation from 'lottie-web-vue'
 Vue.use(LottieAnimation);
 
+import VueSlider from 'vue-slider-component'
+Vue.component('VueSlider', VueSlider);
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'

@@ -6,12 +6,7 @@
         <!--Первый блок слева -->
         <div class="service" v-on:click="goToPage('business-automation')">
           <div class="service-image">
-            <lottie-animation class="anim"
-                              :loop="true"
-                              :autoPlay="true"
-                              ref="anim"
-                              :animationData="require('@/assets/animation/automation.json')"
-            />
+            <img src="@/assets/images/automation.svg">
           </div>
           <div class="service-information">
             <h2 class="service-title">Автоматизация бизнеса</h2>
@@ -37,12 +32,7 @@
         <!--Третий блок слева-->
         <div class="service" v-on:click="goToPage('consulting')">
           <div class="service-image">
-            <lottie-animation class="anim"
-                              :loop="true"
-                              :autoPlay="true"
-                              ref="anim"
-                              :animationData="require('@/assets/animation/consulting.json')"
-            />
+            <img src="@/assets/images/consulting.svg">
           </div>
           <div class="service-information">
             <h2 class="service-title">Консалтинговые услуги</h2>
@@ -55,7 +45,7 @@
           </div>
         </div>
         <!--Четвертый блок справа-->
-        <div class="service">
+        <div class="service" v-on:click="goToPage('accounting-services')">
           <div class="service-information">
             <h2 class="service-title">Бухгалтерское обслуживание</h2>
             <p class="service-description">Перейдите на комплексный аутсорсинг услуг бухгалтерского и налогового
@@ -68,7 +58,7 @@
         </div>
       </div>
       <!--Пятый блок слева-->
-      <div class="service">
+      <div class="service" v-on:click="goToPage('it-outsourcing')">
         <div class="service-image"><img src="@/assets/images/maintenance.svg"></div>
         <div class="service-information">
           <h2 class="service-title">IT - аутсорсинг</h2>
@@ -111,12 +101,8 @@
 </template>
 
 <script>
-    import LottieAnimation from 'lottie-web-vue'
     export default {
         name: "Services",
-        components: {
-            LottieAnimation
-        },
         methods: {
             goToPage(page) {
                 this.$router.push(page);

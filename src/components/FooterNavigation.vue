@@ -9,8 +9,8 @@
         <p class="navigation-links" v-on:click="goToPage('business-automation')">Автоматизация бизнеса</p>
         <p class="navigation-links" v-on:click="goToPage('public-automation')">Автоматизация учреждений госсектора</p>
         <p class="navigation-links" v-on:click="goToPage('consulting')">Консалтинговые услуги</p>
-        <p class="navigation-links">Бухгалтерское обслуживание</p>
-        <p class="navigation-links">IT - аутсорсинг</p>
+        <p class="navigation-links" v-on:click="goToPage('accounting-services')">Бухгалтерское обслуживание</p>
+        <p class="navigation-links" v-on:click="goToPage('it-outsourcing')">IT - аутсорсинг</p>
       </nav>
       <nav class="navigation__wrapper">
         <div class="nav-title title-links">Купить 1С</div>

@@ -7,6 +7,7 @@
       </transition>
     </div>
     <login-form></login-form>
+    <feedback-form></feedback-form>
     <appeals-form></appeals-form>
     <acts-form></acts-form>
     <router-view name="reviews"></router-view>
@@ -18,9 +19,11 @@
 import LoginForm from "@/account/LoginForm";
 import AppealsForm from "@/account/appeals/AppealsForm";
 import ActsForm from "@/account/act/ActsForm";
+import FeedbackForm from "@/components/FeedbackForm";
 export default {
     name: 'App',
     components: {
+        FeedbackForm,
         ActsForm,
         AppealsForm,
         LoginForm

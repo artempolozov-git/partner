@@ -19,7 +19,8 @@
     "vue-easy-tooltip": "^1.0.3",
     "vue-headroom": "^0.10.1",
     "vue-masked-input": "^0.5.2",
-    "vue-router": "^3.5.2"
+    "vue-router": "^3.5.2",
+    "vue-slider-component": "^3.2.15"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

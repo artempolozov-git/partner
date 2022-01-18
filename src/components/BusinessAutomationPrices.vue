@@ -13,7 +13,7 @@
             <li class="list__text"><span>Работа с оборудованием, соответствующим 54-ФЗ</span></li>
             <li class="list__text"><span>Учет и реализация маркированых и подакцизных товаров</span></li>
           </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -32,7 +32,7 @@
           <li class="list__text"><span>Разработка функционала подбора аналогов запасных частей</span></li>
           <li class="list__text"><span>Учет и реализация маркированых и подакцизных товаров</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -52,7 +52,7 @@
           <li class="list__text"><span>Электронный документооборот с контрагентами</span></li>
           <li class="list__text"><span>Внутренние перепродажи, оптимизация налоговой нагрузки</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -70,7 +70,7 @@
           <li class="list__text"><span>Автоматизация формирования печатных форм (рецептов, справок, протоколов осмотров и др.)</span></li>
           <li class="list__text"><span>Автоматизация лаборатории</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -89,7 +89,7 @@
           <li class="list__text"><span>Использование оборудования для соответствия 54-ФЗ</span></li>
           <li class="list__text"><span>Системы СКУД</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -108,7 +108,7 @@
           <li class="list__text"><span>Учет и продажа маркированного товара</span></li>
           <li class="list__text"><span>Маркетинговые мероприятия</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -127,7 +127,7 @@
           <li class="list__text"><span>Учет поставок автомобилей</span></li>
           <li class="list__text"><span>Ответственное хранение автомобилей и консигнация</span></li>
         </ul>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
@@ -144,6 +144,12 @@
         components: {
             Swiper,
             SwiperSlide
+        },
+        methods: {
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
         },
         data() {
             return {

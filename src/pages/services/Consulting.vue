@@ -7,17 +7,12 @@
         <h2 class="title">Консультации по любым вопросам в сфере автоматизации!</h2>
         <div class="description">Получите консультацию экспертов в сфере управленческого учета,
           ведения бухгалтерии, заработной платы и работы с прикладными продуктами «1С»</div>
-        <div class="feedback-button">
+        <div class="feedback-button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
       </div>
       <div class="image">
-        <lottie-animation class="anim"
-                          :loop="true"
-                          :autoPlay="true"
-                          ref="anim"
-                          :animationData="require('@/assets/animation/consulting.json')"
-        />
+        <img src="@/assets/images/consulting.svg">
       </div>
     </div>
 
@@ -97,7 +92,6 @@
 </template>
 
 <script>
-    import LottieAnimation from 'lottie-web-vue'
     import Advantages from "@/components/Advantages";
     import OtherServices from "@/components/OtherServices";
     export default {
@@ -105,7 +99,6 @@
         components: {
             OtherServices,
             Advantages,
-            LottieAnimation,
         },
         data () {
           return {
@@ -142,11 +135,11 @@
                   },
                   {
                       link: 'Бухгалтерское обслуживание',
-                      id: '',
+                      id: 'accounting-services',
                   },
                   {
                       link: 'IT - аутсорсинг',
-                      id: '',
+                      id: 'it-outsourcing',
                   },
                   {
                       link: 'Продажа, внедрение и поддержка программ «1С»',
@@ -163,7 +156,11 @@
             goToPage(page) {
                 this.$router.push(page);
                 window.scrollTo(0,0);
-            }
+            },
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
         },
     }
 </script>

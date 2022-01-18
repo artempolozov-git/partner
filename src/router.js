@@ -90,6 +90,38 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/accounting-services',
+            name: 'accounting-services',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/services/AccountingServices.vue')
+            },
+            meta: {
+                title: 'Бухгалтерское обслуживание | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
+            path: '/it-outsourcing',
+            name: 'it-outsourcing',
+            components: {
+                header: Header,
+                footer: Footer,
+                reviews: Reviews,
+                //aside: Aside,
+                default: () => import('@/pages/services/ItOutsourcing.vue')
+            },
+            meta: {
+                title: 'IT - аутсорсинг | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/contacts',
             name: 'contacts',
             components: {
