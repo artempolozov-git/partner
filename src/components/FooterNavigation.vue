@@ -13,7 +13,7 @@
         <p class="navigation-links" v-on:click="goToPage('it-outsourcing')">IT - аутсорсинг</p>
       </nav>
       <nav class="navigation__wrapper">
-        <div class="nav-title title-links">Купить 1С</div>
+        <div class="nav-title">Купить 1С</div>
         <p class="navigation-links">Программные продукты 1С</p>
         <p class="navigation-links">Сервисы 1С</p>
         <p class="navigation-links">1С Комплект поддержки</p>
@@ -79,7 +79,7 @@
     cursor: pointer;
   }
   .navigation-links, .privacy-links {
-    @extend %links;
+    @extend %footerLinks;
     font-weight: normal;
     color: $color-text;
   }

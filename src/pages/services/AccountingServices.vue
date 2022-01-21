@@ -62,6 +62,55 @@
 
     <div class="section__container">
       <h2 class="title__section">Как это работает?</h2>
+      <div class="stages-work__container indent-bottom">
+        <div class="stages-work__block">
+          <div class="stages-number">1</div>
+          <div class="stages-text">Мы обсуждаем все особенности вашего
+            бизнеса <br>и согласовываем все нюансы по ведению
+            бухгалтерии и заработной платы</div>
+        </div>
+        <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+        <div class="stages-work__block">
+          <div class="stages-number">2</div>
+          <div class="stages-text">Мы заключаем договор на условиях,
+            которые согласовали ранее</div>
+        </div>
+        <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+        <div class="stages-work__block">
+          <div class="stages-number">3</div>
+          <div class="stages-text">За вашей компанией закрепляется
+            команда специалистов</div>
+        </div>
+    </div>
+
+      <div class="stages-work__container">
+        <div class="stages-work__block">
+          <div class="stages-number">4</div>
+          <div class="stages-text">Вы высылаете нам первичные
+            и иные документы в мессенджере</div>
+        </div>
+        <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+        <div class="stages-work__block">
+          <div class="stages-number">5</div>
+          <div class="stages-text">Мы отражаем все в учетной
+            системе с учетом всех особенностей
+            вашего бизнеса</div>
+        </div>
+        <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+        <div class="stages-work__block">
+          <div class="stages-number">6</div>
+          <div class="stages-text">Когда приходит время –
+            мы сдаем месячные, квартальные
+            и годовые отчеты</div>
+        </div>
+        <img class="arrow-icon" src="@/assets/icons/arrow.svg">
+        <div class="stages-work__block">
+          <div class="stages-number">7</div>
+          <div class="stages-text">Вам остается только все контролировать
+            и свободное время направлять
+            на развитие вашего дела</div>
+        </div>
+      </div>
     </div>
 
     <div class="section__container">
@@ -372,10 +421,6 @@
     box-sizing: border-box;
     border: 2px solid #cdcdcd;
     border-radius: 30px;
-      &:hover {
-        box-shadow: none;
-        border: 2px solid #5222d0;
-      }
   }
   .get-results-title  {
     font-size:  $additional-fontsize;
@@ -389,6 +434,27 @@
     grid-column-gap: 60px;
     grid-row-gap: 30px;
     margin-top: 50px;
+  }
+  .stages-work__container {
+    display: flex;
+  }
+  .indent-bottom {
+    margin-bottom: 50px;
+  }
+  .stages-number {
+    font-size: 3vw;
+    color: #5222d0;
+    font-weight: bold;
+    text-align: center;
+  }
+  .stages-text {
+    text-align: center;
+    color: $color-text;
+  }
+  .arrow-icon {
+    width: 1.5vw;
+    margin: 0 30px;
+    transform: rotate(-90deg);
   }
   .radio-button__container {
     font-size: $buttons-inputs-fontsize;

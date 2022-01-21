@@ -20,7 +20,7 @@ const router = new Router({
                 default: () => import('@/views/Home.vue')
             },
             meta: {
-                title: 'Системные решения | PARTNER',
+                title: 'Экспертные решения | PARTNER',
                 description: '',
             },
             children: [],

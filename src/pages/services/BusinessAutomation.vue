@@ -30,7 +30,7 @@
     <div class="section__container">
     <h2 class="title__section">Какие проблемы решает автоматизация бизнеса?</h2>
     <div class="list__container indent-bottom">
-      <div class="number-icon"><img src="@/assets/icons/numbers/one.svg"></div>
+      <div class="list-number">1</div>
       <div class="list__wrapper">
         <div class="list-title">Контроль и учет</div>
         <ul class="list__block">
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="list__container indent-bottom">
-      <div class="number-icon"><img src="@/assets/icons/numbers/two.svg"></div>
+      <div class="list-number">2</div>
       <div class="list__wrapper">
         <div class="list-title">Повышение эффективности</div>
         <ul class="list__block">
@@ -55,7 +55,7 @@
       </div>
     </div>
     <div class="list__container indent-bottom">
-      <div class="number-icon"><img src="@/assets/icons/numbers/three.svg"></div>
+      <div class="list-number">3</div>
       <div class="list__wrapper">
         <div class="list-title">Снижение потерь</div>
         <ul class="list__block">
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="list__container">
-      <div class="number-icon"><img src="@/assets/icons/numbers/four.svg"></div>
+      <div class="list-number">4</div>
       <div class="list__wrapper">
         <div class="list-title">Аналитика и статистика</div>
         <ul class="list__block">
@@ -243,8 +243,10 @@
 .indent-bottom {
   margin-bottom: 30px;
 }
-.number-icon {
-  width: 3vw;
+.list-number {
+  font-size: 3vw;
+  color: #5222d0;
+  font-weight: bold;
 }
 .list-title {
   padding-left: 20px;

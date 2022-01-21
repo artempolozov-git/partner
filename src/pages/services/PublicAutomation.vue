@@ -35,7 +35,7 @@
       <h2 class="title__section">Комплексаная автоматизация:</h2>
       <p class="text">Наша компания придерживается идеи "Комплексного" подхода к автоматизации, который затрагивает все сферы учета государственных учреждений:</p>
       <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/one.svg"></div>
+        <div class="list-number">1</div>
         <div class="list__wrapper">
           <div class="list-title">Бухгалтерский учет</div>
           <ul class="list__block">
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/two.svg"></div>
+        <div class="list-number">2</div>
         <div class="list__wrapper">
           <div class="list-title">Кадровый учет</div>
           <ul class="list__block">
@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="list__container indent-bottom">
-        <div class="number-icon"><img src="@/assets/icons/numbers/three.svg"></div>
+        <div class="list-number">3</div>
         <div class="list__wrapper">
           <div class="list-title">Управленческий учет</div>
           <ul class="list__block">
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="list__container">
-        <div class="number-icon"><img src="@/assets/icons/numbers/four.svg"></div>
+        <div class="list-number">4</div>
         <div class="list__wrapper">
           <div class="list-title">Оперативный учет</div>
           <ul class="list__block">
@@ -333,8 +333,10 @@
   .indent-bottom {
     margin-bottom: 30px;
   }
-  .number-icon {
-    width: 3vw;
+  .list-number {
+    font-size: 3vw;
+    color: #5222d0;
+    font-weight: bold;
   }
   .list-title {
     padding-left: 20px;

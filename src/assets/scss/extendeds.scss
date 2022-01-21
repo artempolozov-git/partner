@@ -14,7 +14,7 @@
 }
 %buttons {
   display: flex;
-  width: max-content;
+  width: fit-content;
   padding: 20px 60px;
   box-sizing: border-box;
   margin-right: 40px;
@@ -35,7 +35,23 @@
     }
 }
 %links {
-  width: max-content;
+  width: fit-content;
+  color: #0093da;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  background-color: rgba(0, 147, 218, 0.08);
+  border-radius: 100px;
+  &:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 147, 218, 0.13);
+  }
+}
+%footerLinks {
+  width: fit-content;
   color: #0093da;
   font-weight: bold;
   text-decoration: none;

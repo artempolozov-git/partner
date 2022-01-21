@@ -46,7 +46,7 @@
     </div>
 
     <div class="feedback-button__wrapper">
-      <div class="feedback-button">
+      <div class="feedback-button" @click="FeedbackForm">
         <span>Связаться с нами</span>
       </div>
     </div>
@@ -57,7 +57,13 @@
 
 <script>
     export default {
-        name: "Contacts"
+        name: "Contacts",
+        methods: {
+            FeedbackForm() {
+                let form = document.getElementById("feedback");
+                form.style.display = (form.style.display == 'none') ? 'block' : 'none'
+            },
+        },
     }
 </script>
 

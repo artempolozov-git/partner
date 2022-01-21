@@ -432,10 +432,6 @@
     box-sizing: border-box;
     border: 2px solid #cdcdcd;
     border-radius: 30px;
-    &:hover {
-      box-shadow: none;
-      border: 2px solid #5222d0;
-    }
   }
   .get-results-title  {
     font-size:  $additional-fontsize;
