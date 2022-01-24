@@ -30,12 +30,14 @@
     border-radius: 50px;
     border: 1px solid #606060;
     color: $color-text;
-  }
-  .direction:hover {
-    border: 1px solid #0086C9;
-    background-color: rgba(0, 134, 201, 0.11);
-    color: #0086C9;
-    text-decoration: underline;
-    cursor: pointer;
+    transition: all 0.2s ease-out;
+      &:hover {
+        border: 1px solid #0086C9;
+        background-color: rgba(0, 134, 201, 0.11);
+        color: #0086C9;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+      }
   }
 </style>

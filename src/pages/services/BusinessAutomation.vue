@@ -217,8 +217,8 @@
   color: $color-text;
 }
 .image {
-  width: 40%;
-  margin-left: 100px;
+  width: 30%;
+  margin-left: auto;
 }
 .feedback-button {
   @extend %buttons;
@@ -332,10 +332,9 @@
   margin-bottom: 30px;
   .point-list__text {
     font-size: $additional-fontsize;
-    font-weight: bold;
   }
   .point-list__image {
-    width: 3vw;
+    width: 4vw;
     margin-right: 15px;
   }
 }

@@ -154,7 +154,7 @@
                          :text="prices.text"></services-prices>
       </div>
       <div class="special-prices__container">
-        <div class="special-prices__text">Комплексное предложение: <span>от 11 357р. / месяц</span></div>
+        <div class="special-prices__text">Комплексное предложение: <span>от 11 357 ₽ / месяц</span></div>
         <div class="prices-feedback__button" @click="FeedbackForm">
           <span>Оставить заявку</span>
         </div>
@@ -166,11 +166,11 @@
         <h2 class="title__section">Разовые услуги</h2>
         <div class="service-offers__text">
           <img src="@/assets/icons/pdf.svg">
-          <span>Вы можете скачать PDF - таблицу с информацией о предоставлении разовых бухгалтерских услуг</span>
+          <span>Вы можете ознакомиться с информацией о предоставлении разовых бухгалтерских услуг</span>
         </div>
       </div>
       <div class="services-download__button">
-        <span>Скачать</span>
+        <span>Ознакомиться</span>
       </div>
     </div>
 
@@ -300,17 +300,17 @@
               ServicesPricesContent: [
                   {
                       title: 'Комплексное обслуживание по з/п. тариф: Предприниматель (льготный)',
-                      sum: 'от 5500р. / квартал',
+                      sum: 'от 5500 ₽ / квартал',
                       text: 'Включает заполнение и сдачу регламентированной отчетности в ИФНС, ПФР, ФСС, формирование ПП',
                   },
                   {
                       title: 'Комплексное обслуживание по з/п. тариф: Предприниматель',
-                      sum: 'от 10 000р. / месяц',
+                      sum: 'от 10 000 ₽ / месяц',
                       text: 'Включает заполнение и сдачу регламентированной отчетности в ИФНС, ПФР, ФСС, формирование ПП, подготовка 2-х платежных ведомостей, табель учета рабочего времени, расчет больничных листов по временной нетрудоспособности, расчет пособия по беременности и родам, расчет отпусков',
                   },
                   {
                       title: 'Комплексное обслуживание по бухгалтерии',
-                      sum: 'от 10 000р. / месяц',
+                      sum: 'от 10 000 ₽ / месяц',
                       text: 'Включает подготовку платежных поручений, получение электронной выписки: Оформление первичных документов (счетов, накладных, счетов-фактур). Ввод первичных документов в программу бухгалтерского учета. Формирование книги учета доходов и расходов. Составление и представление квартальной и годовой отчетности и налоговых деклараций в составе и по формам в соответствии с действующим законодательством в ИФНС, ФСС, ПФР',
                   },
               ],
@@ -371,10 +371,11 @@
   }
   .description {
     color: $color-text;
+    width: 80%;
   }
   .image {
-    width: 40%;
-    margin-left: 100px;
+    width: 30%;
+    margin-left: auto;
   }
   .feedback-button {
   @extend %buttons;
@@ -489,15 +490,20 @@
     margin-top: 30px;
     padding: 40px;
     box-sizing: border-box;
-    border: 2px solid #cdcdcd;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+    transition: all 0.2s ease-out;
     border-radius: 30px;
       &:hover {
         box-shadow: none;
         border: 2px solid #5222d0;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
       }
   }
   .special-prices__text {
-    font-size: $subtitle-fontsize;
+    font-size: $additional-fontsize;
     font-weight: bold;
       & span {
         color: #5222d0;
@@ -513,17 +519,14 @@
     @extend %bannerBackground;
     margin: 0 0 100px;
   }
-  .pdf-images {
-    width: 3vw;
-  }
   .service-offers__text {
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: $additional-fontsize;
-    color: $color-text;
+    color: #222222;
      & img {
-       width: 4vw;
+       width: 3vw;
        margin-right: 15px;
      }
   }

@@ -32,11 +32,15 @@
     padding: 50px;
     box-sizing: border-box;
     border-radius: 30px;
-    border: 2px solid #cdcdcd;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+    transition: all 0.2s ease-out;
     &:hover {
       box-shadow: none;
       border: 2px solid #5222d0;
       cursor: pointer;
+      transition: all 0.2s ease-out;
     }
   }
   .prices-title {

@@ -3,7 +3,7 @@
     <swiper-slide>
       <div class="prices__block">
           <div class="prices-title">Автоматизация розничной сети</div>
-          <div class="price">от 3600р.</div>
+          <div class="price">от 3600 ₽</div>
           <ul class="list__block">
             <li class="list__text"><span>Прозрачный учет товаров и услуг</span></li>
             <li class="list__text"><span>Оперативное получение данных о продажах</span></li>
@@ -22,7 +22,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация автотехцентра и магазина автозапчастей</div>
-        <div class="price">от 62 000р.</div>
+        <div class="price">от 62 000 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Складской учет автозапчастей в разрезе каталожного номера</span></li>
           <li class="list__text"><span>Реализация ордерно-ячеистого склада</span></li>
@@ -41,7 +41,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация оптовой сети</div>
-        <div class="price">от 7 200р.</div>
+        <div class="price">от 7 200 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Работа по заказам и учет резервов</span></li>
           <li class="list__text"><span>Расчет себестоимости, финрезультата торговой сети</span></li>
@@ -61,7 +61,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация медицинского учреждения</div>
-        <div class="price">от 38 600р.</div>
+        <div class="price">от 38 600 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Регистрация и хранение данных пациентов и законных представителей</span></li>
           <li class="list__text"><span>Составление и ведение сеток расписания специалистов и подразделений</span></li>
@@ -79,7 +79,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация фитнес клуба</div>
-        <div class="price">от 50 000р.</div>
+        <div class="price">от 50 000 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Ведение базы клиентов</span></li>
           <li class="list__text"><span>Учет посещений клиентов</span></li>
@@ -98,7 +98,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация розничной сети аптек</div>
-        <div class="price">от 26 400р.</div>
+        <div class="price">от 26 400 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Ведение каталога номенклатуры лекарственных средств</span></li>
           <li class="list__text"><span>Партионный учет медикаментов</span></li>
@@ -117,7 +117,7 @@
     <swiper-slide>
       <div class="prices__block">
         <div class="prices-title">Автоматизация автосалона</div>
-        <div class="price">от 62 000р.</div>
+        <div class="price">от 62 000 ₽</div>
         <ul class="list__block">
           <li class="list__text"><span>Ведение рабочих листов отдела продаж</span></li>
           <li class="list__text"><span>Продажа новых автомобилей и автомобилей с пробегом</span></li>
@@ -133,6 +133,8 @@
       </div>
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
+    <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div>
   </swiper>
 </template>
 
@@ -162,6 +164,10 @@
                         el: '.swiper-pagination',
                         clickable: true
                     },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
                 }
             }
         },
@@ -174,15 +180,20 @@
 
 <style lang="scss" scoped>
 .prices__block {
-  height: auto;
+  height: fit-content;
   padding: 50px;
   box-sizing: border-box;
   border-radius: 30px;
-  border: 2px solid #cdcdcd;
-    &:hover {
-      box-shadow: none;
-      border: 2px solid #5222d0;
-    }
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+  transition: all 0.2s ease-out;
+  &:hover {
+    box-shadow: none;
+    border: 2px solid #5222d0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
 }
 .prices-title {
   text-align: center;

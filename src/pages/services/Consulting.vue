@@ -53,9 +53,8 @@
     <div class="section__container">
       <h2 class="title__section">Мы предлагаем:</h2>
       <p class="text">Компания Partner предоставляет консультации экспертов в различных сферах бизнеса и управления государственными учреждениями, а также проводит обучение
-        сотрудников определенным прикладным навыкам.
-        <br><b>Мы предоставляем услуги:</b>
-      </p>
+        сотрудников определенным прикладным навыкам.</p>
+      <p class="subtitle">Мы предоставляем услуги:</p>
       <div class="list__container">
         <ul class="list__block">
           <li class="list__text"><span>Управленческий консалтинг</span></li>
@@ -186,10 +185,11 @@
 }
 .description {
   color: $color-text;
+  width: 80%;
 }
 .image {
-  width: 50%;
-  margin-left: 100px;
+  width: 30%;
+  margin-left: auto;
 }
 .feedback-button {
   @extend %buttons;
@@ -233,6 +233,11 @@
       width: 3vw;
       margin-right: 15px;
     }
+}
+.subtitle {
+  font-size: $additional-fontsize;
+  font-weight: bold;
+  color: #5222d0;
 }
 .list__text {
   font-size: $additional-fontsize;
