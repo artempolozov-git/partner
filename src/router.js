@@ -122,6 +122,21 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/software-products',
+            name: 'software-products',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/products/SoftwareProducts.vue')
+            },
+            meta: {
+                title: 'Программные продукты 1С | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/contacts',
             name: 'contacts',
             components: {

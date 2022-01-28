@@ -16,7 +16,7 @@
 
     <div class="text__container">
       <span class="subtitle">Справка:</span>
-      <p class="text"><b>Аутсорсинг бухгалтерии</b> – это частный случай аутсорсинга бизнес процессов, который подразумевает вынесение функций, связанных с организацией, ведением
+      <p class="text"><strong>Аутсорсинг бухгалтерии</strong> – это частный случай аутсорсинга бизнес процессов, который подразумевает вынесение функций, связанных с организацией, ведением
         бухгалтерского учёта и составлением отчётности на предприятии за пределы компании и передачу их для исполнения специализирующейся на этом организации,
         аутсорсеру.
       </p>
@@ -387,7 +387,7 @@
     box-sizing: border-box;
       .subtitle {
         font-size: $subtitle-fontsize;
-        color: #0086C9;
+        color: #5222d0;
         font-weight: bold;
       }
   }
@@ -432,8 +432,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 60px;
-    grid-row-gap: 30px;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
     margin-top: 50px;
   }
   .stages-work__container {

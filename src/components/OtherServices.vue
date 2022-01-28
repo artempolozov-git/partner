@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     margin: 0 30px 30px 0;
     border-radius: 50px;
     border: 1px solid #606060;

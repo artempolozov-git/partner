@@ -203,11 +203,6 @@
   transition: all 0.2s ease;
   cursor: default;
 }
-@media only screen and (max-width : 1700px) {
-  .page-main__container {
-    padding: 0 50px 100px;
-  }
-}
 </style>
 
 <!--Стили для выплывающей подсказки-->

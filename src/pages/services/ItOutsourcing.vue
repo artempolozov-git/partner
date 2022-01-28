@@ -16,7 +16,7 @@
 
     <div class="text__container">
       <span class="subtitle">Справка:</span>
-      <p class="text">Если попытаться объяснить термин <b>IТ - аутсорсинг простыми словами</b>, то получиться, что это деловые отношения, при которых одна компания оказывает другой
+      <p class="text">Если попытаться объяснить термин <strong>IТ - аутсорсинг простыми словами</strong>, то получиться, что это деловые отношения, при которых одна компания оказывает другой
         услуги по комплексному обслуживанию инфраструктуры информационных технологий.
       </p>
       <p class="text"><span class="hint">✱ </span>В век повсеместного распространения информационных технологий бизнес все больше становится зависим от своего IT-ландшафта. Вопрос «Сможет ли бизнес без IT?»
@@ -169,7 +169,7 @@
           <span>Вы можете ознакомиться с информацией о предоставлении разовых IT - услуг</span>
         </div>
       </div>
-      <div class="services-download__button">
+      <div class="services-button">
         <span>Ознакомиться</span>
       </div>
     </div>
@@ -407,11 +407,11 @@
     padding: 0 130px;
     margin: 70px 0;
     box-sizing: border-box;
-  .subtitle {
-    font-size: $subtitle-fontsize;
-    color: #0086C9;
-    font-weight: bold;
-  }
+      .subtitle {
+        font-size: $subtitle-fontsize;
+        color: #5222d0;
+        font-weight: bold;
+      }
   }
   .text {
     color: $color-text;
@@ -444,7 +444,7 @@
     cursor: pointer;
     font-size: $additional-fontsize;
       &:hover {
-        color: #3c1e79;
+        color: #5b25eb;
       }
   }
   .point-list__wrapper {
@@ -565,7 +565,7 @@
       margin-right: 15px;
     }
   }
-  .services-download__button {
+  .services-button {
     @extend %buttons;
     margin-left: auto;
   }
@@ -576,23 +576,6 @@
   .directions__wrapper  {
     display: flex;
     flex-wrap: wrap;
-  }
-  .direction  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 50px;
-    margin: 0 30px 30px 0;
-    border-radius: 50px;
-    border: 1px solid #606060;
-    color: $color-text;
-  }
-  .direction:hover {
-    border: 1px solid #0086C9;
-    background-color: rgba(0, 134, 201, 0.11);
-    color: #0086C9;
-    text-decoration: underline;
-    cursor: pointer;
   }
 </style>
 

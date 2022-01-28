@@ -26,9 +26,9 @@
           <div class="time-works__blocks">
             <div class="title__blocks">Отдел продаж, клиентский отдел:</div>
             <div class="time-works__text">
-              Пн-чт: 08:00 - 18:00
-              <br>Пт: 08:00 - 17:00
-              <br>Сб-вс: выходной
+              <b>Пн-чт:</b> 08:00 - 18:00
+              <br><b>Пт:</b> 08:00 - 17:00
+              <br><b>Сб-вс:</b> выходной
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
           <div class="time-works__blocks">
             <div class="title__blocks">Отдел технической поддержки:</div>
             <div class="time-works__text">
-              Без выходных: 08:00 - 21:00
+              <b>Без выходных:</b> 08:00 - 21:00
             </div>
           </div>
         </div>

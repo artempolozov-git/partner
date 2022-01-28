@@ -70,7 +70,7 @@
         </div>
       </div>
       <!--Шестой блок справа-->
-      <div class="service">
+      <div class="service" v-on:click="goToPage('software-products')">
         <div class="service-information">
           <h2 class="service-title">Продажа, внедрение и поддержка программ «1С»</h2>
           <p class="service-description">У нас вы можете подобрать, купить и установить любой программный
