@@ -137,6 +137,21 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/services-1C',
+            name: 'services-1C',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/products/Services1C.vue')
+            },
+            meta: {
+                title: 'Сервисы 1С | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/contacts',
             name: 'contacts',
             components: {

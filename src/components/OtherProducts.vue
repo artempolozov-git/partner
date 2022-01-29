@@ -33,15 +33,15 @@
     padding: 10px 30px;
     margin: 0 30px 30px 0;
     border-radius: 50px;
-    border: 1px solid #606060;
+    border: 2px solid #e0e0e0;
     color: $color-text;
     transition: all 0.2s ease-out;
       &:hover {
-         border: 1px solid #5222d0;
-         background-color: rgba(82, 34, 208, 0.11);
-         color: #5222d0;
-         cursor: pointer;
-         transition: all 0.2s ease-out;
+        border: 2px solid rgba(82, 34, 208, 0.71);
+       background-color: rgba(82, 34, 208, 0.06);
+       color: #5222d0;
+       cursor: pointer;
+       transition: all 0.2s ease-out;
        }
   }
 </style>

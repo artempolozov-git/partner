@@ -25,15 +25,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 20px 50px;
     margin: 0 30px 30px 0;
     border-radius: 50px;
-    border: 1px solid #606060;
+    border: 2px solid #e0e0e0;
     color: $color-text;
     transition: all 0.2s ease-out;
       &:hover {
-        border: 1px solid #0086C9;
-        background-color: rgba(0, 134, 201, 0.11);
+        border: 2px solid #0086C9;
+        background-color: rgba(0, 134, 201, 0.06);
         color: #0086C9;
         text-decoration: underline;
         cursor: pointer;

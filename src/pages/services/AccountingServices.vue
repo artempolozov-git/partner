@@ -333,7 +333,7 @@
                   },
                   {
                       link: 'Продажа, внедрение и поддержка программ «1С»',
-                      id: '',
+                      id: 'software-products',
                   },
                   {
                       link: 'Продажа и настройка торгового оборудования',
@@ -420,7 +420,7 @@
   .get-results__wrapper {
     padding: 40px;
     box-sizing: border-box;
-    border: 2px solid #cdcdcd;
+    border: 2px solid #e0e0e0;
     border-radius: 30px;
   }
   .get-results-title  {
@@ -469,7 +469,7 @@
   .system-title {
     font-size: $additional-fontsize;
     font-weight: bold;
-    color: #0086C9;
+    color: #5222d0;
     margin-bottom: 15px;
   }
   .vue-slider {
@@ -490,14 +490,21 @@
     margin-top: 30px;
     padding: 40px;
     box-sizing: border-box;
-    border: 2px solid #ffffff;
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
     transition: all 0.2s ease-out;
     border-radius: 30px;
       &:hover {
-        box-shadow: none;
-        border: 2px solid #5222d0;
+        box-shadow:
+        1px 1px #5222d0,
+        2px 2px #5222d0,
+        3px 3px #5222d0,
+        4px 4px #5222d0,
+        5px 5px #5222d0,
+        6px 6px #5222d0,
+        7px 7px #5222d0;
+        -webkit-transform: translateX(-7px);
+        transform: translateX(-7px);
         cursor: pointer;
         transition: all 0.2s ease-out;
       }
@@ -541,22 +548,5 @@
   .directions__wrapper  {
     display: flex;
     flex-wrap: wrap;
-  }
-  .direction  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 50px;
-    margin: 0 30px 30px 0;
-    border-radius: 50px;
-    border: 1px solid #606060;
-    color: $color-text;
-  }
-  .direction:hover {
-    border: 1px solid #0086C9;
-    background-color: rgba(0, 134, 201, 0.11);
-    color: #0086C9;
-    text-decoration: underline;
-    cursor: pointer;
   }
 </style>

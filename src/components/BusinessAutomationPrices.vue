@@ -184,13 +184,20 @@
   padding: 50px;
   box-sizing: border-box;
   border-radius: 30px;
-  border: 2px solid #ffffff;
   background-color: #ffffff;
   box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
   transition: all 0.2s ease-out;
   &:hover {
-    box-shadow: none;
-    border: 2px solid #5222d0;
+    box-shadow:
+    1px 1px #5222d0,
+    2px 2px #5222d0,
+    3px 3px #5222d0,
+    4px 4px #5222d0,
+    5px 5px #5222d0,
+    6px 6px #5222d0,
+    7px 7px #5222d0;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
     cursor: pointer;
     transition: all 0.2s ease-out;
   }

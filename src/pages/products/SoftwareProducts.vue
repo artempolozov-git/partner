@@ -62,13 +62,13 @@
                                     :id="products.id"></standard-software-products>
         <div class="products-main__container">
           <div class="products-title">Лицензии:</div>
-          <div class="products__container">
+          <div class="products__container" @click="FeedbackForm">
             <div class="products-images"><img src="@/assets/images/products/licenses.png"></div>
             <div class="products-information__wrapper">
               <div class="products-naming">Клиентские и серверные лицензии</div>
               <div class="text">Используются для запуска серверов 1С в составе клиент-серверной архитектуры для серверных лицензий, и для запуска
                 дополнительных клиентских сеансов для клиентских лицензий. Стоимость зависит от количества лицензий и их типа.</div>
-              <div class="view-more" @click="FeedbackForm">Подробнее</div>
+              <div class="view-more">Подробнее</div>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
 
     <div class="section__container-links">
       <h2 class="title__section">Смотрите также:</h2>
-      <div class="other-links__wrapper indent-bottom">
+      <div class="other-links__wrapper indent-bottom" v-on:click="goToPage('services-1C')">
         <span>Сервисы 1С</span>
         <img class="links-arrow__icon" src="@/assets/icons/links-arrow.svg">
       </div>
@@ -331,6 +331,10 @@
                 let form = document.getElementById("feedback");
                 form.style.display = (form.style.display == 'none') ? 'block' : 'none'
             },
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
         },
     }
 </script>
@@ -442,13 +446,20 @@
     align-items: center;
     padding: 30px 40px;
     border-radius: 30px;
-    border: 2px solid #ffffff;
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
     transition: all 0.2s ease-out;
     &:hover {
-      box-shadow: none;
-      border: 2px solid #5222d0;
+      box-shadow:
+      1px 1px #5222d0,
+      2px 2px #5222d0,
+      3px 3px #5222d0,
+      4px 4px #5222d0,
+      5px 5px #5222d0,
+      6px 6px #5222d0,
+      7px 7px #5222d0;
+      -webkit-transform: translateX(-7px);
+      transform: translateX(-7px);
       cursor: pointer;
       transition: all 0.2s ease-out;
     }
@@ -525,9 +536,14 @@
         cursor: pointer;
       }
   }
+  .other-links__wrapper:hover .links-arrow__icon {
+    transform: translate3d(10px, 0, 0);
+    transition: all 0.2s ease;
+  }
   .links-arrow__icon {
     width: 1vw;
     margin-left: 10px;
+    transition: all 0.2s ease;
   }
   .indent-bottom {
     margin-bottom: 30px;

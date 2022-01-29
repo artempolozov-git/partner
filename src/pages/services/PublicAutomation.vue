@@ -253,7 +253,7 @@
                     },
                     {
                         link: 'Продажа, внедрение и поддержка программ «1С»',
-                        id: '',
+                        id: 'software-products',
                     },
                     {
                         link: 'Продажа и настройка торгового оборудования',
@@ -392,22 +392,5 @@
   .directions__wrapper  {
     display: flex;
     flex-wrap: wrap;
-  }
-  .direction  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 50px;
-    margin: 0 30px 30px 0;
-    border-radius: 50px;
-    border: 1px solid #606060;
-    color: $color-text;
-  }
-  .direction:hover {
-    border: 1px solid #0086C9;
-    background-color: rgba(0, 134, 201, 0.11);
-    color: #0086C9;
-    text-decoration: underline;
-    cursor: pointer;
   }
 </style>

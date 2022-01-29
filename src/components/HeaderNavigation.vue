@@ -24,7 +24,7 @@
         </div>
         <div class="dropdown-content">
           <p v-on:click="goToPage('software-products')">Программные продукты 1С</p>
-          <p>Сервисы 1С</p>
+          <p v-on:click="goToPage('services-1C')">Сервисы 1С</p>
           <p>1С Комплект поддержки</p>
         </div>
       </div>

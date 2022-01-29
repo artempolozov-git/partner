@@ -69,7 +69,7 @@
         и поиск наиболее оптимальных путей решения задач!</div>
     </div>
 
-    <div class="slogan down-indent">Присоединяйтесь - вместе мы создаем будущее!</div>
+    <div class="slogan indent-bottom">Присоединяйтесь - вместе мы создаем будущее!</div>
   </div>
 </template>
 
@@ -139,7 +139,7 @@
 .section__container {
   @extend %sectionContainer;
 }
-.down-indent {
+.indent-bottom {
   margin: 0;
 }
 .team-photography {
