@@ -83,7 +83,7 @@
         <div class="service-image indent-right"><img src="@/assets/images/programs.svg"></div>
       </div>
       <!--Седьмой блок слева-->
-      <div class="service">
+      <div class="service" v-on:click="goToPage('shop-equipment')">
         <div class="service-image"><img src="@/assets/images/equipment.svg"></div>
         <div class="service-information">
           <h2 class="service-title">Продажа и настройка торгового оборудования</h2>

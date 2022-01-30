@@ -25,14 +25,14 @@
         <div class="dropdown-content">
           <p v-on:click="goToPage('software-products')">Программные продукты 1С</p>
           <p v-on:click="goToPage('services-1C')">Сервисы 1С</p>
-          <p>1С Комплект поддержки</p>
+          <p v-on:click="goToPage('support-kit')">1С Комплект поддержки</p>
         </div>
       </div>
 
 
       <div class="dropdown__menu">
         <div class="navigation-links">
-          <span class="list-title">Торговое оборудование</span>
+          <span class="list-title" v-on:click="goToPage('shop-equipment')">Торговое оборудование</span>
           <img src="@/assets/icons/arrow.svg">
         </div>
         <div class="dropdown-content">
@@ -144,7 +144,7 @@
     background-color: #ffffff;
     width: max-content;
     padding: 10px;
-    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+    box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, 0.2);
     z-index: 1;
   }
   .dropdown-content > p {

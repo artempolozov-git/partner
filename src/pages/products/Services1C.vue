@@ -57,7 +57,7 @@
         <span>Программные продукты 1С</span>
         <img class="links-arrow__icon" src="@/assets/icons/links-arrow.svg">
       </div>
-      <div class="other-links__wrapper">
+      <div class="other-links__wrapper" v-on:click="goToPage('support-kit')">
         <span>1С Комплект поддержки</span>
         <img class="links-arrow__icon" src="@/assets/icons/links-arrow.svg">
       </div>

@@ -107,7 +107,7 @@
   .table__container {
     margin-top: 30px;
     overflow-x: auto;
-    box-shadow: 0px 5px 10px 2px rgba(157, 157, 157, 0.2);
+    box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, 0.2);
   }
   .table th, .table td{
     padding: 15px;

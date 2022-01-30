@@ -24,7 +24,7 @@
     <div class="section__container">
       <h2 class="title__section">Основные направления</h2>
       <div class="directions__wrapper">
-        <div class="direction" style="background-color: rgba(32,195,208,0.15)">
+        <div class="direction tooltip-block" style="background-color: rgba(32,195,208,0.15)">
           <span>Внедрение комплексных систем 1С: Предприятие класса ERP
             <span class="direction__info">✱</span>
           </span>
@@ -32,7 +32,7 @@
             англ. Enterprise Resource Planning, планирование ресурсов предприятия
           </vue-easy-tooltip>
         </div>
-        <div class="direction direction__indent-right" style="background-color: rgba(202,235,82,0.15)">
+        <div class="direction direction__indent-right tooltip-block" style="background-color: rgba(202,235,82,0.15)">
           <span>Автоматизация учреждений государственного сектора
             <span class="direction__info">✱</span>
           </span>
@@ -40,7 +40,7 @@
             В том числе с использованием технологии 1С:FRESH (Облачная подсистема Фреш — современный инструментарий для создания онлайн-сервисов, обеспечивающих работу пользователей в прикладных решениях на платформе «1С:Предприятие» через Интернет (в «облаке»)
           </vue-easy-tooltip>
         </div>
-        <div class="direction" style="background-color: rgba(236,97,91,0.15)">
+        <div class="direction tooltip-block" style="background-color: rgba(236,97,91,0.15)">
           <span>Разработка программного обеспечения по техническому заданию
             <span class="direction__info">✱</span>
           </span>
@@ -166,6 +166,9 @@
   border-radius: 50px;
   font-weight: bold;
   text-align: center;
+}
+.tooltip-block {
+  cursor: pointer;
 }
 .direction__info {
   font-weight: bold;

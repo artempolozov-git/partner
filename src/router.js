@@ -152,6 +152,36 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/support-kit',
+            name: 'support-kit',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/products/SupportKit.vue')
+            },
+            meta: {
+                title: '1С:Комплект поддержки | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
+            path: '/shop-equipment',
+            name: 'shop-equipment',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/equipment/ShopEquipment.vue')
+            },
+            meta: {
+                title: 'Торговое оборудование | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/contacts',
             name: 'contacts',
             components: {

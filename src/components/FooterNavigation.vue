@@ -16,10 +16,10 @@
         <div class="nav-title">Купить 1С</div>
         <p class="navigation-links" v-on:click="goToPage('software-products')">Программные продукты 1С</p>
         <p class="navigation-links" v-on:click="goToPage('services-1C')">Сервисы 1С</p>
-        <p class="navigation-links">1С Комплект поддержки</p>
+        <p class="navigation-links" v-on:click="goToPage('support-kit')">1С Комплект поддержки</p>
       </nav>
       <nav class="navigation__wrapper">
-        <div class="nav-title title-links">Торговое оборудование</div>
+        <div class="nav-title title-links" v-on:click="goToPage('shop-equipment')">Торговое оборудование</div>
         <p class="navigation-links">Фиксальные накопители</p>
         <p class="navigation-links">Контрольно кассовая техника</p>
         <p class="navigation-links">Сканеры</p>
