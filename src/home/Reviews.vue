@@ -19,7 +19,7 @@
               <br>Благодаря слаженной работе мы автоматизировали работу магазинов, менеджеров
                 и управляющего персонала, внедрив систему учета на базе платформы 1С.Предприятие.</p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -39,7 +39,7 @@
                 им задачи в намеченные сроки
                 и с высоким качеством.</p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -56,7 +56,7 @@
                 как надежную и квалифицированную
                 команду профессионалов!</p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -70,7 +70,7 @@
                 Мы уверены в надежности, ответственности и профессионализме команды компании Партнер,
                 поэтому можем смело рекомендовать ее к сотрудничеству!</p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -83,7 +83,7 @@
                 Система автоматизации продаж и автомобильного сервиса на базе 1С:Альфа-Авто.
                 Можем рекомендовать ООО Партнер как надежного партнера в вопросах автоматизации бизнеса и информационных технологий.</p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -98,7 +98,7 @@
                 Мы рекомендуем ООО Партнер как надежного партнера для реализации проектов любой сложности!
               </p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -113,7 +113,7 @@
                 а также выбран программный продукт - 1С: Комплексная автоматизация!
               </p>
             </div>
-            <div class="view-more">Подробнее</div>
+            <div class="view-more" v-on:click="goToPage('reviews')">Подробнее</div>
           </div>
         </swiper-slide>
       </swiper>
@@ -144,7 +144,13 @@
                     },
                 }
             }
-        }
+        },
+        methods: {
+            goToPage(page) {
+                this.$router.push(page);
+                window.scrollTo(0,0);
+            }
+        },
     }
 </script>
 

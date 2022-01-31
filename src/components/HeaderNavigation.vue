@@ -52,7 +52,7 @@
         </div>
         <div class="dropdown-content">
           <p>Внедрения</p>
-          <p>Отзывы клиентов</p>
+          <p v-on:click="goToPage('reviews')">Отзывы клиентов</p>
         </div>
       </div>
 

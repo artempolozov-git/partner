@@ -30,7 +30,7 @@
       <nav class="navigation__wrapper">
         <div class="nav-title">Нам доверяют</div>
         <p class="navigation-links">Внедрения</p>
-        <p class="navigation-links">Отзывы клиентов</p>
+        <p class="navigation-links" v-on:click="goToPage('reviews')">Отзывы клиентов</p>
       </nav>
       <nav class="navigation__wrapper">
         <div class="nav-title title-links" v-on:click="goToPage('contacts')">Контакты</div>

@@ -182,6 +182,21 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/reviews',
+            name: 'reviews',
+            components: {
+                header: Header,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/ReviewsPages.vue')
+            },
+            meta: {
+                title: 'Отзывы клиентов | PARTNER',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/contacts',
             name: 'contacts',
             components: {
