@@ -68,6 +68,6 @@ export default {
     flex: 1 0 auto;
     max-width: 1920px;
     align-self: center;
-    width: -webkit-fill-available;
+    width: 100%;
   }
 </style>

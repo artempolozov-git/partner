@@ -85,4 +85,9 @@
     padding: 100px;
   }
 }
+@media only screen and (max-width : 1536px) {
+  .footer__form__container {
+    padding: 100px 70px;
+  }
+}
 </style>

@@ -25,12 +25,7 @@
           </div>
         </div>
         <div class="image__block">
-          <lottie-animation class="anim"
-                            :loop="true"
-                            :autoPlay="true"
-                            ref="anim"
-                            :animationData="require('@/assets/animation/solutions-main-page.json')"
-          />
+          <div class="service-image"><img src="@/assets/images/robot-mainpage.svg"></div>
         </div>
       </swiper-slide>
       <!--Второй слайд-->
@@ -56,12 +51,7 @@
           </div>
         </div>
         <div class="image__block">
-          <lottie-animation class="anim"
-                            :loop="true"
-                            :autoPlay="true"
-                            ref="anim"
-                            :animationData="require('@/assets/animation/solutions-main-page.json')"
-          />
+          <div class="service-image"><img src="@/assets/images/equipment.svg"></div>
         </div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
@@ -73,13 +63,11 @@
 <script>
     import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
     import 'swiper/css/swiper.css'
-    import LottieAnimation from 'lottie-web-vue'
     export default {
         name: "MainScreen",
         components: {
             Swiper,
             SwiperSlide,
-            LottieAnimation
         },
         data() {
             return {

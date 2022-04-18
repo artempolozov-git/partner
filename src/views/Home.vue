@@ -85,4 +85,12 @@
     padding: 0 50px 100px;
   }
 }
+@media only screen and (max-width : 1536px) {
+  .home__container {
+    padding: 0 50px 50px;
+  }
+  .home__advantages__container {
+    padding: 0 50px;
+  }
+}
 </style>

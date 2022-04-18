@@ -171,4 +171,9 @@
       padding: 30px 100px;
     }
   }
+  @media only screen and (max-width : 1536px) {
+    .header-navigations__block {
+      padding: 30px 50px;
+    }
+  }
 </style>

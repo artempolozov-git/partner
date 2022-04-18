@@ -1,0 +1,11 @@
+@mixin changePadding($padding-main__container: 0 50px 100px){
+  padding: $padding-main__container;
+}
+@media screen and (max-width: 1536px){
+  .page-main__container {
+    @include changePadding
+  }
+  .account__container {
+    @include changePadding
+  }
+}

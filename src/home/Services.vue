@@ -158,7 +158,9 @@
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
-@media only screen and (max-width : 1700px) {
-
+@media only screen and (max-width : 1536px) {
+  .services__wrapper {
+    padding: 100px 50px;
+  }
 }
 </style>

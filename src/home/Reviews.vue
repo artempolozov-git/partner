@@ -196,4 +196,9 @@
     padding: 100px 150px;
   }
 }
+@media only screen and (max-width : 1536px) {
+  .home__reviews__container {
+    padding: 100px 70px;
+  }
+}
 </style>

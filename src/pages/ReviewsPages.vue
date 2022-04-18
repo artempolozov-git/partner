@@ -1,7 +1,7 @@
 <template>
   <div class="page-main__container">
     <div class="title__wrapper">
-      <h2 class="title__pages">Отзывы</h2>
+      <h2 class="title__pages">Отзывы клиентов</h2>
     </div>
 
       <div class="reviews-main__container">

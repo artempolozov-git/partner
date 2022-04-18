@@ -45,7 +45,7 @@
               </tr>
               </thead>
               <tbody>
-              <tr v-for="(item, table ) in informationTable" :key="table">
+              <tr v-for="(item, table) in informationTable" :key="table">
                 <td>{{item.named}}</td>
                 <td v-for="(value, table) in item.value" :key="table">{{value}}</td>
               </tr>
